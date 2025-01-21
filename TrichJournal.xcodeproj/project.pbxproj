@@ -1,0 +1,574 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		0B9CA7742D40432A0063ED80 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0B9CA7522D4043280063ED80 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B9CA7592D4043280063ED80;
+			remoteInfo = TrichJournal;
+		};
+		0B9CA77E2D40432A0063ED80 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0B9CA7522D4043280063ED80 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B9CA7592D4043280063ED80;
+			remoteInfo = TrichJournal;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0B9CA75A2D4043280063ED80 /* TrichJournal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrichJournal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B9CA7732D40432A0063ED80 /* TrichJournalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrichJournalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B9CA77D2D40432A0063ED80 /* TrichJournalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrichJournalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		0B9CA7852D40432A0063ED80 /* Exceptions for "TrichJournal" folder in "TrichJournal" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 0B9CA7592D4043280063ED80 /* TrichJournal */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		0B9CA75C2D4043280063ED80 /* TrichJournal */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				0B9CA7852D40432A0063ED80 /* Exceptions for "TrichJournal" folder in "TrichJournal" target */,
+			);
+			path = TrichJournal;
+			sourceTree = "<group>";
+		};
+		0B9CA7762D40432A0063ED80 /* TrichJournalTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = TrichJournalTests;
+			sourceTree = "<group>";
+		};
+		0B9CA7802D40432A0063ED80 /* TrichJournalUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = TrichJournalUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0B9CA7572D4043280063ED80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B9CA7702D40432A0063ED80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B9CA77A2D40432A0063ED80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B9CA7512D4043280063ED80 = {
+			isa = PBXGroup;
+			children = (
+				0B9CA75C2D4043280063ED80 /* TrichJournal */,
+				0B9CA7762D40432A0063ED80 /* TrichJournalTests */,
+				0B9CA7802D40432A0063ED80 /* TrichJournalUITests */,
+				0B9CA75B2D4043280063ED80 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0B9CA75B2D4043280063ED80 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0B9CA75A2D4043280063ED80 /* TrichJournal.app */,
+				0B9CA7732D40432A0063ED80 /* TrichJournalTests.xctest */,
+				0B9CA77D2D40432A0063ED80 /* TrichJournalUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0B9CA7592D4043280063ED80 /* TrichJournal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B9CA7862D40432A0063ED80 /* Build configuration list for PBXNativeTarget "TrichJournal" */;
+			buildPhases = (
+				0B9CA7562D4043280063ED80 /* Sources */,
+				0B9CA7572D4043280063ED80 /* Frameworks */,
+				0B9CA7582D4043280063ED80 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				0B9CA75C2D4043280063ED80 /* TrichJournal */,
+			);
+			name = TrichJournal;
+			packageProductDependencies = (
+			);
+			productName = TrichJournal;
+			productReference = 0B9CA75A2D4043280063ED80 /* TrichJournal.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0B9CA7722D40432A0063ED80 /* TrichJournalTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B9CA78B2D40432A0063ED80 /* Build configuration list for PBXNativeTarget "TrichJournalTests" */;
+			buildPhases = (
+				0B9CA76F2D40432A0063ED80 /* Sources */,
+				0B9CA7702D40432A0063ED80 /* Frameworks */,
+				0B9CA7712D40432A0063ED80 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0B9CA7752D40432A0063ED80 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				0B9CA7762D40432A0063ED80 /* TrichJournalTests */,
+			);
+			name = TrichJournalTests;
+			packageProductDependencies = (
+			);
+			productName = TrichJournalTests;
+			productReference = 0B9CA7732D40432A0063ED80 /* TrichJournalTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0B9CA77C2D40432A0063ED80 /* TrichJournalUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B9CA78E2D40432A0063ED80 /* Build configuration list for PBXNativeTarget "TrichJournalUITests" */;
+			buildPhases = (
+				0B9CA7792D40432A0063ED80 /* Sources */,
+				0B9CA77A2D40432A0063ED80 /* Frameworks */,
+				0B9CA77B2D40432A0063ED80 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0B9CA77F2D40432A0063ED80 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				0B9CA7802D40432A0063ED80 /* TrichJournalUITests */,
+			);
+			name = TrichJournalUITests;
+			packageProductDependencies = (
+			);
+			productName = TrichJournalUITests;
+			productReference = 0B9CA77D2D40432A0063ED80 /* TrichJournalUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0B9CA7522D4043280063ED80 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					0B9CA7592D4043280063ED80 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					0B9CA7722D40432A0063ED80 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 0B9CA7592D4043280063ED80;
+					};
+					0B9CA77C2D40432A0063ED80 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 0B9CA7592D4043280063ED80;
+					};
+				};
+			};
+			buildConfigurationList = 0B9CA7552D4043280063ED80 /* Build configuration list for PBXProject "TrichJournal" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0B9CA7512D4043280063ED80;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 0B9CA75B2D4043280063ED80 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0B9CA7592D4043280063ED80 /* TrichJournal */,
+				0B9CA7722D40432A0063ED80 /* TrichJournalTests */,
+				0B9CA77C2D40432A0063ED80 /* TrichJournalUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0B9CA7582D4043280063ED80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B9CA7712D40432A0063ED80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B9CA77B2D40432A0063ED80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0B9CA7562D4043280063ED80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B9CA76F2D40432A0063ED80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B9CA7792D40432A0063ED80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0B9CA7752D40432A0063ED80 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0B9CA7592D4043280063ED80 /* TrichJournal */;
+			targetProxy = 0B9CA7742D40432A0063ED80 /* PBXContainerItemProxy */;
+		};
+		0B9CA77F2D40432A0063ED80 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0B9CA7592D4043280063ED80 /* TrichJournal */;
+			targetProxy = 0B9CA77E2D40432A0063ED80 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0B9CA7872D40432A0063ED80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 83C69R5293;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TrichJournal/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = condoncody.TrichJournal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0B9CA7882D40432A0063ED80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 83C69R5293;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TrichJournal/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = condoncody.TrichJournal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0B9CA7892D40432A0063ED80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0B9CA78A2D40432A0063ED80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0B9CA78C2D40432A0063ED80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 83C69R5293;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = condoncody.TrichJournalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrichJournal.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TrichJournal";
+			};
+			name = Debug;
+		};
+		0B9CA78D2D40432A0063ED80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 83C69R5293;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = condoncody.TrichJournalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrichJournal.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TrichJournal";
+			};
+			name = Release;
+		};
+		0B9CA78F2D40432A0063ED80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 83C69R5293;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = condoncody.TrichJournalUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TrichJournal;
+			};
+			name = Debug;
+		};
+		0B9CA7902D40432A0063ED80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 83C69R5293;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = condoncody.TrichJournalUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TrichJournal;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0B9CA7552D4043280063ED80 /* Build configuration list for PBXProject "TrichJournal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B9CA7892D40432A0063ED80 /* Debug */,
+				0B9CA78A2D40432A0063ED80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B9CA7862D40432A0063ED80 /* Build configuration list for PBXNativeTarget "TrichJournal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B9CA7872D40432A0063ED80 /* Debug */,
+				0B9CA7882D40432A0063ED80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B9CA78B2D40432A0063ED80 /* Build configuration list for PBXNativeTarget "TrichJournalTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B9CA78C2D40432A0063ED80 /* Debug */,
+				0B9CA78D2D40432A0063ED80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B9CA78E2D40432A0063ED80 /* Build configuration list for PBXNativeTarget "TrichJournalUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B9CA78F2D40432A0063ED80 /* Debug */,
+				0B9CA7902D40432A0063ED80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0B9CA7522D4043280063ED80 /* Project object */;
+}
