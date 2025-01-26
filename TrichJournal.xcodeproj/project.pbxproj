@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		0B14647242EAC306DF916587 /* Pods_TrichJournal_TrichJournalUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F3EAF3DACFC1AEC291DA622 /* Pods_TrichJournal_TrichJournalUITests.framework */; };
+		0B9D187A2D468560003010B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B9D18352D468560003010B9 /* LaunchScreen.storyboard */; };
+		0B9D187B2D468560003010B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B9D18362D468560003010B9 /* Main.storyboard */; };
+		0B9D187C2D468560003010B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9D18322D468560003010B9 /* AppDelegate.swift */; };
+		0B9D187F2D468560003010B9 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9D18392D468560003010B9 /* WelcomeVC.swift */; };
+		0B9D188B2D468D29003010B9 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9D188A2D468D29003010B9 /* MainVC.swift */; };
 		0FCD1CD98D6E192B9CA416C1 /* Pods_TrichJournalTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F0D36285B25F7B505BDD19D /* Pods_TrichJournalTests.framework */; };
 		932740E8DF2258BBD9B79A84 /* Pods_TrichJournal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A4DBBB8864821ABD3029B5D /* Pods_TrichJournal.framework */; };
 /* End PBXBuildFile section */
@@ -33,6 +38,11 @@
 		0B9CA75A2D4043280063ED80 /* TrichJournal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrichJournal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B9CA7732D40432A0063ED80 /* TrichJournalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrichJournalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B9CA77D2D40432A0063ED80 /* TrichJournalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrichJournalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B9D18322D468560003010B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0B9D18392D468560003010B9 /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
+		0B9D183A2D468560003010B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0B9D183B2D468560003010B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0B9D188A2D468D29003010B9 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainVC.swift; path = View/MainVC.swift; sourceTree = SOURCE_ROOT; };
 		0F0D36285B25F7B505BDD19D /* Pods_TrichJournalTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrichJournalTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F2CB7E2631F88F1B8F99392 /* Pods-TrichJournal-TrichJournalUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrichJournal-TrichJournalUITests.debug.xcconfig"; path = "Target Support Files/Pods-TrichJournal-TrichJournalUITests/Pods-TrichJournal-TrichJournalUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		40BEA87590898BFE2F18FE4D /* Pods-TrichJournal-TrichJournalUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrichJournal-TrichJournalUITests.release.xcconfig"; path = "Target Support Files/Pods-TrichJournal-TrichJournalUITests/Pods-TrichJournal-TrichJournalUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -65,15 +75,11 @@
 		};
 		0B9CA7762D40432A0063ED80 /* TrichJournalTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
 			path = TrichJournalTests;
 			sourceTree = "<group>";
 		};
 		0B9CA7802D40432A0063ED80 /* TrichJournalUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
 			path = TrichJournalUITests;
 			sourceTree = "<group>";
 		};
@@ -110,6 +116,10 @@
 		0B9CA7512D4043280063ED80 = {
 			isa = PBXGroup;
 			children = (
+				0B9D18892D468587003010B9 /* Supporting Files */,
+				0B9D18882D468581003010B9 /* Controller */,
+				0B9D18872D46857B003010B9 /* View */,
+				0B9D18862D468574003010B9 /* Model */,
 				0B9CA75C2D4043280063ED80 /* TrichJournal */,
 				0B9CA7762D40432A0063ED80 /* TrichJournalTests */,
 				0B9CA7802D40432A0063ED80 /* TrichJournalUITests */,
@@ -127,6 +137,39 @@
 				0B9CA77D2D40432A0063ED80 /* TrichJournalUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		0B9D18862D468574003010B9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0B9D18872D46857B003010B9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0B9D18352D468560003010B9 /* LaunchScreen.storyboard */,
+				0B9D18362D468560003010B9 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0B9D18882D468581003010B9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0B9D188A2D468D29003010B9 /* MainVC.swift */,
+				0B9D18392D468560003010B9 /* WelcomeVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0B9D18892D468587003010B9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0B9D18322D468560003010B9 /* AppDelegate.swift */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		4C4A6E3115A9600D57256FFD /* Frameworks */ = {
@@ -149,7 +192,6 @@
 				87AC26AF40E42FD9CBF424B4 /* Pods-TrichJournalTests.debug.xcconfig */,
 				EA4CB914F881799F6BF4F33F /* Pods-TrichJournalTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -270,6 +312,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B9D187A2D468560003010B9 /* LaunchScreen.storyboard in Resources */,
+				0B9D187B2D468560003010B9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,6 +407,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B9D187C2D468560003010B9 /* AppDelegate.swift in Sources */,
+				0B9D188B2D468D29003010B9 /* MainVC.swift in Sources */,
+				0B9D187F2D468560003010B9 /* WelcomeVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +441,25 @@
 			targetProxy = 0B9CA77E2D40432A0063ED80 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0B9D18352D468560003010B9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0B9D183B2D468560003010B9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		0B9D18362D468560003010B9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0B9D183A2D468560003010B9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		0B9CA7872D40432A0063ED80 /* Debug */ = {
