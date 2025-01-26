@@ -13,6 +13,9 @@
 		0B9D187C2D468560003010B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9D18322D468560003010B9 /* AppDelegate.swift */; };
 		0B9D187F2D468560003010B9 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9D18392D468560003010B9 /* WelcomeVC.swift */; };
 		0B9D188B2D468D29003010B9 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9D188A2D468D29003010B9 /* MainVC.swift */; };
+		0B9D188E2D46C86D003010B9 /* IncidentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B9D188D2D46C86D003010B9 /* IncidentCell.xib */; };
+		0B9D188F2D46C86D003010B9 /* IncidentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9D188C2D46C86D003010B9 /* IncidentCell.swift */; };
+		0B9D19192D46CDDE003010B9 /* NewEntryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9D19182D46CDDE003010B9 /* NewEntryVC.swift */; };
 		0FCD1CD98D6E192B9CA416C1 /* Pods_TrichJournalTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F0D36285B25F7B505BDD19D /* Pods_TrichJournalTests.framework */; };
 		932740E8DF2258BBD9B79A84 /* Pods_TrichJournal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A4DBBB8864821ABD3029B5D /* Pods_TrichJournal.framework */; };
 /* End PBXBuildFile section */
@@ -43,6 +46,9 @@
 		0B9D183A2D468560003010B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0B9D183B2D468560003010B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0B9D188A2D468D29003010B9 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainVC.swift; path = View/MainVC.swift; sourceTree = SOURCE_ROOT; };
+		0B9D188C2D46C86D003010B9 /* IncidentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncidentCell.swift; sourceTree = "<group>"; };
+		0B9D188D2D46C86D003010B9 /* IncidentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IncidentCell.xib; sourceTree = "<group>"; };
+		0B9D19182D46CDDE003010B9 /* NewEntryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewEntryVC.swift; sourceTree = "<group>"; };
 		0F0D36285B25F7B505BDD19D /* Pods_TrichJournalTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrichJournalTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F2CB7E2631F88F1B8F99392 /* Pods-TrichJournal-TrichJournalUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrichJournal-TrichJournalUITests.debug.xcconfig"; path = "Target Support Files/Pods-TrichJournal-TrichJournalUITests/Pods-TrichJournal-TrichJournalUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		40BEA87590898BFE2F18FE4D /* Pods-TrichJournal-TrichJournalUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrichJournal-TrichJournalUITests.release.xcconfig"; path = "Target Support Files/Pods-TrichJournal-TrichJournalUITests/Pods-TrichJournal-TrichJournalUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -151,6 +157,8 @@
 			children = (
 				0B9D18352D468560003010B9 /* LaunchScreen.storyboard */,
 				0B9D18362D468560003010B9 /* Main.storyboard */,
+				0B9D188C2D46C86D003010B9 /* IncidentCell.swift */,
+				0B9D188D2D46C86D003010B9 /* IncidentCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -160,6 +168,7 @@
 			children = (
 				0B9D188A2D468D29003010B9 /* MainVC.swift */,
 				0B9D18392D468560003010B9 /* WelcomeVC.swift */,
+				0B9D19182D46CDDE003010B9 /* NewEntryVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -312,6 +321,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B9D188E2D46C86D003010B9 /* IncidentCell.xib in Resources */,
 				0B9D187A2D468560003010B9 /* LaunchScreen.storyboard in Resources */,
 				0B9D187B2D468560003010B9 /* Main.storyboard in Resources */,
 			);
@@ -409,7 +419,9 @@
 			files = (
 				0B9D187C2D468560003010B9 /* AppDelegate.swift in Sources */,
 				0B9D188B2D468D29003010B9 /* MainVC.swift in Sources */,
+				0B9D19192D46CDDE003010B9 /* NewEntryVC.swift in Sources */,
 				0B9D187F2D468560003010B9 /* WelcomeVC.swift in Sources */,
+				0B9D188F2D46C86D003010B9 /* IncidentCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
