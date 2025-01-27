@@ -142,6 +142,8 @@ class NewEntryVC: UIViewController {
         saveItem()
     }
     
+    
+    
     func saveItem() {
         do {
             try context.save()
