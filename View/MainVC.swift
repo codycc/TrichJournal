@@ -25,6 +25,8 @@ class MainVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        mainTableView.delegate = self
+        mainTableView.dataSource = self
         
         mainTitleLabel.font = UIFont(name:"Roboto-ExtraLight",size:30)
 
@@ -34,11 +36,19 @@ class MainVC: UIViewController {
         
         mainTableView.register(UINib(nibName: "IncidentCell", bundle: nil), forCellReuseIdentifier: "IncidentCell")
         
+        NotificationCenter.default.addObserver(self, selector: #selector(reloadTable), name: NSNotification.Name(rawValue: "reloadTable"), object: nil)
+        
     }
     
     // MARK: - Data manipulation methods
     
-   
+    @objc func reloadTable() {
+        loadIncidents()
+       /// currentSortId -= 1
+        //sortEntries()
+       // currentSortId += 1
+        mainTableView.reloadData()
+    }
     
     func loadIncidents() {
         let request : NSFetchRequest<Incident> = Incident.fetchRequest()
@@ -60,6 +70,8 @@ class MainVC: UIViewController {
 
 }
 
+
+
 extension MainVC: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return incidents.count
@@ -70,6 +82,8 @@ extension MainVC: UITableViewDataSource, UITableViewDelegate {
         cell.incidentLabel?.text = incidents[indexPath.row].situation
         return cell
     }
+    
+    
     
     
     

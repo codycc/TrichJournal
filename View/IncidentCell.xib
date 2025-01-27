@@ -31,6 +31,7 @@
                         <constraints>
                             <constraint firstItem="6CC-lt-e5d" firstAttribute="leading" secondItem="mNh-Na-Ckj" secondAttribute="leading" constant="10" id="KHZ-iC-AOp"/>
                             <constraint firstItem="6CC-lt-e5d" firstAttribute="top" secondItem="mNh-Na-Ckj" secondAttribute="top" constant="10" id="dQN-Nf-h2l"/>
+                            <constraint firstAttribute="height" constant="62" id="hXw-6Z-9Zr"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -50,7 +51,7 @@
     </objects>
     <resources>
         <systemColor name="systemPurpleColor">
-            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -81,7 +81,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="xt8-vP-QiW">
-                                <rect key="frame" x="0.0" y="100" width="393" height="752"/>
+                                <rect key="frame" x="0.0" y="100" width="393" height="652"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="IncidentCell" id="4bs-lx-NRX">
@@ -97,7 +97,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Ia-1n-Jtl">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="100"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add-icon" translatesAutoresizingMaskIntoConstraints="NO" id="tzI-OO-G0i">
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plus" translatesAutoresizingMaskIntoConstraints="NO" id="tzI-OO-G0i">
                                         <rect key="frame" x="333" y="40" width="50" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="50" id="ROQ-zA-MLG"/>
@@ -121,15 +121,25 @@
                                     <constraint firstAttribute="trailing" secondItem="tzI-OO-G0i" secondAttribute="trailing" constant="10" id="xq6-xO-55D"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TFs-nJ-dJ4">
+                                <rect key="frame" x="0.0" y="752" width="393" height="100"/>
+                                <color key="backgroundColor" systemColor="systemCyanColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="QWf-AI-dHv"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5hd-MM-Gs3"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="TFs-nJ-dJ4" secondAttribute="bottom" id="Brt-VR-kN8"/>
+                            <constraint firstItem="TFs-nJ-dJ4" firstAttribute="top" secondItem="xt8-vP-QiW" secondAttribute="bottom" id="Dbe-Px-1AM"/>
                             <constraint firstItem="6Ia-1n-Jtl" firstAttribute="top" secondItem="D0i-WG-f7A" secondAttribute="top" id="GJX-mF-YJt"/>
                             <constraint firstItem="xt8-vP-QiW" firstAttribute="top" secondItem="6Ia-1n-Jtl" secondAttribute="bottom" id="LGr-Xz-QUO"/>
-                            <constraint firstItem="5hd-MM-Gs3" firstAttribute="bottom" secondItem="xt8-vP-QiW" secondAttribute="bottom" id="Qu4-hU-o39"/>
+                            <constraint firstItem="5hd-MM-Gs3" firstAttribute="trailing" secondItem="TFs-nJ-dJ4" secondAttribute="trailing" id="O6i-DF-b8f"/>
                             <constraint firstItem="5hd-MM-Gs3" firstAttribute="trailing" secondItem="6Ia-1n-Jtl" secondAttribute="trailing" id="YJe-7j-cm1"/>
                             <constraint firstItem="xt8-vP-QiW" firstAttribute="leading" secondItem="5hd-MM-Gs3" secondAttribute="leading" id="ZpI-f3-KxB"/>
+                            <constraint firstItem="TFs-nJ-dJ4" firstAttribute="leading" secondItem="5hd-MM-Gs3" secondAttribute="leading" id="gZ2-Du-z0q"/>
                             <constraint firstItem="5hd-MM-Gs3" firstAttribute="trailing" secondItem="xt8-vP-QiW" secondAttribute="trailing" id="kgM-4G-pRI"/>
                             <constraint firstItem="6Ia-1n-Jtl" firstAttribute="leading" secondItem="5hd-MM-Gs3" secondAttribute="leading" id="rhp-sV-1BK"/>
                         </constraints>
@@ -201,6 +211,7 @@
                                                     </label>
                                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="8AL-rT-7KY">
                                                         <rect key="frame" x="-2" y="43" width="347" height="44"/>
+                                                        <color key="tintColor" red="0.69411766529999996" green="0.85882353779999998" blue="0.92941176889999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="43" id="eSg-PD-G9d"/>
                                                         </constraints>
@@ -270,7 +281,7 @@
                                                             <constraint firstAttribute="height" constant="45" id="UdA-9W-NaB"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                     </textField>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="# of Hairs Pulled" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FqG-Lh-noN">
                                                         <rect key="frame" x="0.0" y="402" width="343" height="30"/>
@@ -287,7 +298,7 @@
                                                             <constraint firstAttribute="height" constant="45" id="Pix-DS-SLj"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                     </textField>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Affected Areas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YKD-lU-6Ti">
                                                         <rect key="frame" x="0.0" y="503" width="343" height="30"/>
@@ -335,6 +346,9 @@
                                                         <buttonConfiguration key="configuration" style="plain" title="Submit">
                                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="submitIncidentPressed:" destination="fkB-RM-qHj" eventType="touchUpInside" id="Z3v-db-wNO"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -375,7 +389,7 @@
                         <outlet property="affectedAreasTextField" destination="WjM-bZ-45z" id="Pyp-qH-ffG"/>
                         <outlet property="backBtn" destination="WNW-mS-Kpt" id="MOG-2j-SMh"/>
                         <outlet property="dateTimeTextField" destination="V4Q-W7-P4i" id="jeG-xR-ItN"/>
-                        <outlet property="didYouDigestControl" destination="yWi-A2-7G8" id="dof-k6-Ei1"/>
+                        <outlet property="didYouDigestControl" destination="yWi-A2-7G8" id="Ije-bI-TxO"/>
                         <outlet property="howLongTextField" destination="Yj9-Ho-5ap" id="UFU-Yb-FHq"/>
                         <outlet property="intensityControl" destination="8AL-rT-7KY" id="tqp-eB-LaN"/>
                         <outlet property="numberOfHairsTextField" destination="OBv-RA-v0T" id="lAe-aA-k3X"/>
@@ -389,8 +403,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="add-icon" width="250" height="250"/>
         <image name="back" width="512" height="512"/>
+        <image name="plus" width="512" height="512"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

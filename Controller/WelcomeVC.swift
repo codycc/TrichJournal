@@ -14,7 +14,7 @@ class WelcomeVC: UIViewController {
     @IBOutlet weak var welcomeLabel: UILabel!
     
     @IBOutlet weak var additionalTextLbl: UILabel!
-    let launchedBefore = UserDefaults.standard.bool(forKey: "launchedBefore")
+    let welcomeScreenShown = UserDefaults.standard.bool(forKey: "welcomeScreenShown")
     override func viewDidLoad() {
           super.viewDidLoad()
           initialSetup()
@@ -23,7 +23,7 @@ class WelcomeVC: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         showLabels()
         
-        if launchedBefore {
+        if welcomeScreenShown {
             self.performSegue(withIdentifier: "goToMainVC", sender: nil)
         } else {
           
@@ -92,8 +92,8 @@ class WelcomeVC: UIViewController {
  
     @IBAction func welcomeBtnPressed(_ sender: UIButton) {
         self.performSegue(withIdentifier: "goToMainVC", sender: self)
-        let launchedBefore = UserDefaults.standard.bool(forKey: "launchedBefore")
-        UserDefaults.standard.set(true, forKey: "launchedBefore")
+//        let welcomeScreenShown = UserDefaults.standard.bool(forKey: "welcomeScreenShown")
+        UserDefaults.standard.set(true, forKey: "welcomeScreenShown")
         
     }
     
