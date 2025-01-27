@@ -10,4 +10,7 @@
         <attribute name="numberOfHairsPulled" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="situation" optional="YES" attributeType="String"/>
     </entity>
+    <entity name="Situation" representedClassName="Situation" syncable="YES" codeGenerationType="class">
+        <attribute name="place" optional="YES" attributeType="String"/>
+    </entity>
 </model>

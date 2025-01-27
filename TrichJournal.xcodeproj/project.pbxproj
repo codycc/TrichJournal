@@ -16,6 +16,8 @@
 		0B9D188E2D46C86D003010B9 /* IncidentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B9D188D2D46C86D003010B9 /* IncidentCell.xib */; };
 		0B9D188F2D46C86D003010B9 /* IncidentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9D188C2D46C86D003010B9 /* IncidentCell.swift */; };
 		0B9D19192D46CDDE003010B9 /* NewEntryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9D19182D46CDDE003010B9 /* NewEntryVC.swift */; };
+		0BF46A052D46D72500B2114A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF46A042D46D72200B2114A /* Constants.swift */; };
+		0BF46B172D47F93C00B2114A /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF46B162D47F93C00B2114A /* CustomTextField.swift */; };
 		0FCD1CD98D6E192B9CA416C1 /* Pods_TrichJournalTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F0D36285B25F7B505BDD19D /* Pods_TrichJournalTests.framework */; };
 		932740E8DF2258BBD9B79A84 /* Pods_TrichJournal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A4DBBB8864821ABD3029B5D /* Pods_TrichJournal.framework */; };
 /* End PBXBuildFile section */
@@ -49,6 +51,8 @@
 		0B9D188C2D46C86D003010B9 /* IncidentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncidentCell.swift; sourceTree = "<group>"; };
 		0B9D188D2D46C86D003010B9 /* IncidentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IncidentCell.xib; sourceTree = "<group>"; };
 		0B9D19182D46CDDE003010B9 /* NewEntryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewEntryVC.swift; sourceTree = "<group>"; };
+		0BF46A042D46D72200B2114A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		0BF46B162D47F93C00B2114A /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		0F0D36285B25F7B505BDD19D /* Pods_TrichJournalTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrichJournalTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F2CB7E2631F88F1B8F99392 /* Pods-TrichJournal-TrichJournalUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrichJournal-TrichJournalUITests.debug.xcconfig"; path = "Target Support Files/Pods-TrichJournal-TrichJournalUITests/Pods-TrichJournal-TrichJournalUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		40BEA87590898BFE2F18FE4D /* Pods-TrichJournal-TrichJournalUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrichJournal-TrichJournalUITests.release.xcconfig"; path = "Target Support Files/Pods-TrichJournal-TrichJournalUITests/Pods-TrichJournal-TrichJournalUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -122,6 +126,7 @@
 		0B9CA7512D4043280063ED80 = {
 			isa = PBXGroup;
 			children = (
+				0BF46A042D46D72200B2114A /* Constants.swift */,
 				0B9D18892D468587003010B9 /* Supporting Files */,
 				0B9D18882D468581003010B9 /* Controller */,
 				0B9D18872D46857B003010B9 /* View */,
@@ -159,6 +164,7 @@
 				0B9D18362D468560003010B9 /* Main.storyboard */,
 				0B9D188C2D46C86D003010B9 /* IncidentCell.swift */,
 				0B9D188D2D46C86D003010B9 /* IncidentCell.xib */,
+				0BF46B162D47F93C00B2114A /* CustomTextField.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -422,6 +428,8 @@
 				0B9D19192D46CDDE003010B9 /* NewEntryVC.swift in Sources */,
 				0B9D187F2D468560003010B9 /* WelcomeVC.swift in Sources */,
 				0B9D188F2D46C86D003010B9 /* IncidentCell.swift in Sources */,
+				0BF46A052D46D72500B2114A /* Constants.swift in Sources */,
+				0BF46B172D47F93C00B2114A /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

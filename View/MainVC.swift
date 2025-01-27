@@ -18,12 +18,15 @@ class MainVC: UIViewController {
     
     @IBOutlet weak var addIncidentImage: UIImageView!
     
+    @IBOutlet weak var mainTitleLabel: UILabel!
     
     @IBOutlet weak var mainTableView: UITableView!
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        mainTitleLabel.font = UIFont(name:"Roboto-ExtraLight",size:30)
 
         let goToAddIncidentTapped = UITapGestureRecognizer(target: self, action: #selector(goToNewEntryVC))
         addIncidentImage.addGestureRecognizer(goToAddIncidentTapped)
