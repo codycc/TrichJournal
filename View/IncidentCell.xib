@@ -17,41 +17,42 @@
                 <rect key="frame" x="0.0" y="0.0" width="345" height="82"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mNh-Na-Ckj">
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oDc-xC-tlB">
                         <rect key="frame" x="10" y="10" width="325" height="62"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6CC-lt-e5d">
-                                <rect key="frame" x="10" y="10" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6FS-k6-8OX">
+                                <rect key="frame" x="141.66666666666666" y="20.666666666666668" width="42" height="21.000000000000004"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                        <color key="backgroundColor" systemColor="systemBlueColor"/>
                         <constraints>
-                            <constraint firstItem="6CC-lt-e5d" firstAttribute="leading" secondItem="mNh-Na-Ckj" secondAttribute="leading" constant="10" id="KHZ-iC-AOp"/>
-                            <constraint firstItem="6CC-lt-e5d" firstAttribute="top" secondItem="mNh-Na-Ckj" secondAttribute="top" constant="10" id="dQN-Nf-h2l"/>
-                            <constraint firstAttribute="height" constant="62" id="hXw-6Z-9Zr"/>
+                            <constraint firstItem="6FS-k6-8OX" firstAttribute="centerX" secondItem="oDc-xC-tlB" secondAttribute="centerX" id="SRw-X9-u9S"/>
+                            <constraint firstItem="6FS-k6-8OX" firstAttribute="centerY" secondItem="oDc-xC-tlB" secondAttribute="centerY" id="yOb-s0-EXW"/>
                         </constraints>
                     </view>
                 </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
-                    <constraint firstItem="mNh-Na-Ckj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="7FO-Y2-mcw"/>
-                    <constraint firstItem="mNh-Na-Ckj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="ar5-je-ioJ"/>
-                    <constraint firstAttribute="bottom" secondItem="mNh-Na-Ckj" secondAttribute="bottom" constant="10" id="eAd-Xw-hMh"/>
-                    <constraint firstAttribute="trailing" secondItem="mNh-Na-Ckj" secondAttribute="trailing" constant="10" id="fID-gb-aef"/>
+                    <constraint firstItem="oDc-xC-tlB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="A7U-OI-CT0"/>
+                    <constraint firstAttribute="bottom" secondItem="oDc-xC-tlB" secondAttribute="bottom" constant="10" id="HUO-Dv-XPD"/>
+                    <constraint firstAttribute="trailing" secondItem="oDc-xC-tlB" secondAttribute="trailing" constant="10" id="fWE-pL-TLO"/>
+                    <constraint firstItem="oDc-xC-tlB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="wEu-ub-JCL"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="incidentLabel" destination="6CC-lt-e5d" id="nDF-cr-y6R"/>
+                <outlet property="containerView" destination="oDc-xC-tlB" id="9mj-vl-Fz3"/>
+                <outlet property="incidentLabel" destination="6FS-k6-8OX" id="dKV-ME-DfL"/>
             </connections>
             <point key="canvasLocation" x="67.938931297709928" y="33.098591549295776"/>
         </tableViewCell>
     </objects>
     <resources>
-        <systemColor name="systemPurpleColor">
-            <color red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

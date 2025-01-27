@@ -81,9 +81,17 @@ extension MainVC: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = mainTableView.dequeueReusableCell(withIdentifier: "IncidentCell", for: indexPath) as! IncidentCell
-        cell.incidentLabel?.text = incidents[indexPath.row].situation
+        let incident = incidents[indexPath.row]
+        cell.configureCell(incident: incident)
+        
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 150.00
+    }
+    
+    
     
     
     

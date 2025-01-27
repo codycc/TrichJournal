@@ -3,6 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -81,14 +82,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="xt8-vP-QiW">
-                                <rect key="frame" x="0.0" y="100" width="393" height="652"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <rect key="frame" x="10" y="110" width="373" height="632"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="IncidentCell" id="4bs-lx-NRX">
-                                        <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                        <rect key="frame" x="0.0" y="50" width="373" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4bs-lx-NRX" id="xw1-xr-VPv">
-                                            <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="373" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -98,10 +99,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="100"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plus" translatesAutoresizingMaskIntoConstraints="NO" id="tzI-OO-G0i">
-                                        <rect key="frame" x="333" y="40" width="50" height="50"/>
+                                        <rect key="frame" x="343" y="50" width="40" height="40"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="50" id="ROQ-zA-MLG"/>
-                                            <constraint firstAttribute="height" constant="50" id="tXp-Se-sYt"/>
+                                            <constraint firstAttribute="width" constant="40" id="ROQ-zA-MLG"/>
+                                            <constraint firstAttribute="height" constant="40" id="tXp-Se-sYt"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TrichJournal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fjz-9v-MJx">
@@ -112,7 +113,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.85098039215686272" green="0.94509803921568625" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" name="NavigationBar"/>
                                 <constraints>
                                     <constraint firstItem="Fjz-9v-MJx" firstAttribute="centerX" secondItem="6Ia-1n-Jtl" secondAttribute="centerX" id="0lM-fj-Uzi"/>
                                     <constraint firstAttribute="height" constant="100" id="4Kj-31-amz"/>
@@ -123,7 +124,7 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TFs-nJ-dJ4">
                                 <rect key="frame" x="0.0" y="752" width="393" height="100"/>
-                                <color key="backgroundColor" systemColor="systemCyanColor"/>
+                                <color key="backgroundColor" name="BottomNavigation"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="QWf-AI-dHv"/>
                                 </constraints>
@@ -133,14 +134,14 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="TFs-nJ-dJ4" secondAttribute="bottom" id="Brt-VR-kN8"/>
-                            <constraint firstItem="TFs-nJ-dJ4" firstAttribute="top" secondItem="xt8-vP-QiW" secondAttribute="bottom" id="Dbe-Px-1AM"/>
+                            <constraint firstItem="TFs-nJ-dJ4" firstAttribute="top" secondItem="xt8-vP-QiW" secondAttribute="bottom" constant="10" id="Dbe-Px-1AM"/>
                             <constraint firstItem="6Ia-1n-Jtl" firstAttribute="top" secondItem="D0i-WG-f7A" secondAttribute="top" id="GJX-mF-YJt"/>
-                            <constraint firstItem="xt8-vP-QiW" firstAttribute="top" secondItem="6Ia-1n-Jtl" secondAttribute="bottom" id="LGr-Xz-QUO"/>
+                            <constraint firstItem="xt8-vP-QiW" firstAttribute="top" secondItem="6Ia-1n-Jtl" secondAttribute="bottom" constant="10" id="LGr-Xz-QUO"/>
                             <constraint firstItem="5hd-MM-Gs3" firstAttribute="trailing" secondItem="TFs-nJ-dJ4" secondAttribute="trailing" id="O6i-DF-b8f"/>
                             <constraint firstItem="5hd-MM-Gs3" firstAttribute="trailing" secondItem="6Ia-1n-Jtl" secondAttribute="trailing" id="YJe-7j-cm1"/>
-                            <constraint firstItem="xt8-vP-QiW" firstAttribute="leading" secondItem="5hd-MM-Gs3" secondAttribute="leading" id="ZpI-f3-KxB"/>
+                            <constraint firstItem="xt8-vP-QiW" firstAttribute="leading" secondItem="5hd-MM-Gs3" secondAttribute="leading" constant="10" id="ZpI-f3-KxB"/>
                             <constraint firstItem="TFs-nJ-dJ4" firstAttribute="leading" secondItem="5hd-MM-Gs3" secondAttribute="leading" id="gZ2-Du-z0q"/>
-                            <constraint firstItem="5hd-MM-Gs3" firstAttribute="trailing" secondItem="xt8-vP-QiW" secondAttribute="trailing" id="kgM-4G-pRI"/>
+                            <constraint firstItem="5hd-MM-Gs3" firstAttribute="trailing" secondItem="xt8-vP-QiW" secondAttribute="trailing" constant="10" id="kgM-4G-pRI"/>
                             <constraint firstItem="6Ia-1n-Jtl" firstAttribute="leading" secondItem="5hd-MM-Gs3" secondAttribute="leading" id="rhp-sV-1BK"/>
                         </constraints>
                     </view>
@@ -181,7 +182,7 @@
                                         </constraints>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.85098039219999999" green="0.94509803920000002" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" name="NavigationBar"/>
                                 <constraints>
                                     <constraint firstItem="WNW-mS-Kpt" firstAttribute="leading" secondItem="x5E-f0-dTV" secondAttribute="leading" constant="5" id="ZT4-Xf-GIf"/>
                                     <constraint firstAttribute="bottom" secondItem="HOO-Ya-dmu" secondAttribute="bottom" constant="10" id="aXn-iL-8MN"/>
@@ -405,6 +406,12 @@
     <resources>
         <image name="back" width="512" height="512"/>
         <image name="plus" width="512" height="512"/>
+        <namedColor name="BottomNavigation">
+            <color red="0.21568627450980393" green="0.24705882352941178" blue="0.31764705882352939" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="NavigationBar">
+            <color red="0.85098039215686272" green="0.94509803921568625" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
