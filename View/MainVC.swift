@@ -26,7 +26,13 @@ class MainVC: UIViewController {
     
     @IBOutlet weak var backgroundAddImage: UIView!
     
-
+    @IBOutlet weak var sortBtn: UIImageView!
+    
+    @IBOutlet weak var sortLbl: UILabel!
+    
+    
+    var currentSortId = 1
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         mainTableView.delegate = self
@@ -41,17 +47,17 @@ class MainVC: UIViewController {
 
         let goToAddIncidentTapped = UITapGestureRecognizer(target: self, action: #selector(goToNewEntryVC))
         addIncidentNewBtn.addGestureRecognizer(goToAddIncidentTapped)
-        loadIncidents()
-        
+        let sortTap = UITapGestureRecognizer(target: self, action: #selector(self.sortTapped(_:)))
+        sortBtn.addGestureRecognizer(sortTap)
         mainTableView.register(UINib(nibName: "IncidentCell", bundle: nil), forCellReuseIdentifier: "IncidentCell")
-        
         NotificationCenter.default.addObserver(self, selector: #selector(reloadTable), name: NSNotification.Name(rawValue: "reloadTable"), object: nil)
         
+        loadIncidents()
+        sortDate()
     }
     
-    //test
     
-    // MARK: - Data manipulation methods
+    
     
     @objc func reloadTable() {
         loadIncidents()
@@ -71,8 +77,48 @@ class MainVC: UIViewController {
         }
     }
     
+    func sortDate() {
+        incidents = incidents.sorted(by: { $0.dateTime < $1.dateTime })
+        mainTableView.reloadData()
+    }
+    
+    func sortEntries() {
+       
+        switch currentSortId {
+        case 1:
+            sortLbl.text = "Hairs"
+            incidents = incidents.sorted(by: { $0.numberOfHairsPulled < $1.numberOfHairsPulled })
+            
+        case 2:
+            sortLbl.text = "Intensity"
+            incidents = incidents.sorted(by: { $0.intensity < $1.intensity })
+            
+        case 3:
+            sortLbl.text = "Length of Time"
+            incidents = incidents.sorted(by: { $0.howLong < $1.howLong })
+            
+        case 4:
+            sortLbl.text = "Date"
+            incidents = incidents.sorted(by: { $0.dateTime < $1.dateTime })
+
+        default:
+            print("hello")
+            
+        }
+        
+    }
+    
     @objc func goToNewEntryVC() {
         performSegue(withIdentifier: "goToAddEntryVC", sender: nil)
+    }
+    
+    @objc func sortTapped(_ sender: UITapGestureRecognizer? = nil) {
+        if currentSortId == 5 {
+            currentSortId = 1
+        }
+        sortEntries()
+        mainTableView.reloadData()
+        currentSortId += 1
     }
     
     

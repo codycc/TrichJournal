@@ -116,11 +116,11 @@ class NewEntryVC: UIViewController {
         if self.dateTimeTextField.text!.isEmpty  || self.situationTextField.text!.isEmpty  || self.howLongTextField.text!.isEmpty  || numberOfHairsTextField.text!.isEmpty  || affectedAreasTextField.text!.isEmpty  {
             self.submitBtn.backgroundColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
             self.submitBtn.isEnabled = false
-            self.submitBtn.titleLabel?.text = "Please fill all fields"
+            self.submitBtn.setTitle("Please fill all fields to submit.", for: .normal)
         } else {
             self.submitBtn.backgroundColor = #colorLiteral(red: 0.6510000229, green: 0.8629999757, blue: 0.9369999766, alpha: 1)
             self.submitBtn.isEnabled = true
-            self.submitBtn.titleLabel?.text = "Submit"
+            self.submitBtn.setTitle("Submit", for: .normal)
         }
     }
     

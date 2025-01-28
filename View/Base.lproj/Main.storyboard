@@ -205,6 +205,8 @@
                         <outlet property="backgroundAddImage" destination="HRR-ia-azD" id="viR-2S-O5l"/>
                         <outlet property="mainTableView" destination="xt8-vP-QiW" id="oeX-ua-688"/>
                         <outlet property="mainTitleLabel" destination="Fjz-9v-MJx" id="Y7W-Rm-M0c"/>
+                        <outlet property="sortBtn" destination="ycF-uX-KuV" id="pBk-1a-51l"/>
+                        <outlet property="sortLbl" destination="hNS-qm-get" id="997-AP-eRP"/>
                         <segue destination="fkB-RM-qHj" kind="presentation" identifier="goToAddEntryVC" modalPresentationStyle="fullScreen" id="RAs-su-RIv"/>
                     </connections>
                 </viewController>

@@ -87,11 +87,15 @@
 		};
 		0B9CA7762D40432A0063ED80 /* TrichJournalTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
 			path = TrichJournalTests;
 			sourceTree = "<group>";
 		};
 		0B9CA7802D40432A0063ED80 /* TrichJournalUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
 			path = TrichJournalUITests;
 			sourceTree = "<group>";
 		};
@@ -224,6 +228,7 @@
 				0B9CA7562D4043280063ED80 /* Sources */,
 				0B9CA7572D4043280063ED80 /* Frameworks */,
 				0B9CA7582D4043280063ED80 /* Resources */,
+				60AFB5B84E3E31D7CEFDD624 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -267,6 +272,7 @@
 				0B9CA7792D40432A0063ED80 /* Sources */,
 				0B9CA77A2D40432A0063ED80 /* Frameworks */,
 				0B9CA77B2D40432A0063ED80 /* Resources */,
+				721BD42AEB182D5D74B9C200 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -373,6 +379,40 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		60AFB5B84E3E31D7CEFDD624 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TrichJournal/Pods-TrichJournal-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TrichJournal/Pods-TrichJournal-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TrichJournal/Pods-TrichJournal-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		721BD42AEB182D5D74B9C200 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TrichJournal-TrichJournalUITests/Pods-TrichJournal-TrichJournalUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TrichJournal-TrichJournalUITests/Pods-TrichJournal-TrichJournalUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TrichJournal-TrichJournalUITests/Pods-TrichJournal-TrichJournalUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		992197B81094F0BE229288BA /* [CP] Check Pods Manifest.lock */ = {

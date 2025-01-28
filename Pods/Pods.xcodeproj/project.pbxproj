@@ -7,19 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		283ABEC86CF5DDD8E080F97B6EEF777D /* Pods-TrichJournal-TrichJournalUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8657DABFDEF9C4F05902CFE8EAC47562 /* Pods-TrichJournal-TrichJournalUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		34A440C2A5D14D8098496CE7CA2B2378 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
-		6FA8AA7F41232566B51A62293848A312 /* Pods-TrichJournal-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 33ECC3998936259A6CD08F51A1418DCE /* Pods-TrichJournal-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		757C5C4EDA923E5EDE762CD7A489A616 /* Pods-TrichJournal-TrichJournalUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DF20176FBC714316CAFDE0DB9E61DCF /* Pods-TrichJournal-TrichJournalUITests-dummy.m */; };
+		0EFEF6DA469FAA1B116FF1505DA8D1CA /* Endian.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7307F36F80C93DF1E40FEBCED2856A01 /* Endian.swift */; };
+		2EEF9998DBBD61C2B8C97C10313772CC /* CSVError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5AB1548C3401ADFC77FD143458E987 /* CSVError.swift */; };
+		512C833231B2AE6BA4656D75CC4A35F4 /* UnicodeIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC54F61F17BF5E97EED8200EA9E0E81E /* UnicodeIterator.swift */; };
+		67E12EC3BA78D8D83A53A68C48234292 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		768B43C98355CDE2CDFA8FE25B9AF985 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		7A72BA046C18624A7A85C6B87124D897 /* Legacy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FF868768AEBACAE7CEF63061A15F21 /* Legacy.swift */; };
+		7C6533FEF2774A80EBFFD54DD1F30BB5 /* CSV.swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EC843986770307A58BE233B21CB69F5 /* CSV.swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7DD7B68C079EB4FB84F42670409F3B3E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
-		8DCE1272AF2368DFD8BA37AFCF81DAF0 /* Pods-TrichJournal-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B9A542063664D82CC9ADADB235BD82A /* Pods-TrichJournal-dummy.m */; };
-		991ABC233D2C3228E2B639C12B08F1D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
-		ADE0C4877C05C712D4909233319C70C9 /* Pods-TrichJournalTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC248C4C2E8E1D0B09CC19734E3699A /* Pods-TrichJournalTests-dummy.m */; };
-		C0F3636D1A12C835C81E8AACF67495D3 /* Pods-TrichJournalTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ED15C3CCDFB1A4D401D1C0AB6E21CE61 /* Pods-TrichJournalTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		807108020F1310862B2B54EFBD5B3D56 /* Pods-TrichJournal-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C7DE8CB23F95C4DEB8B0C0D7C2229CF8 /* Pods-TrichJournal-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		92A8C12E482F47E636700A1B41BA603C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		9E5334FCBAE40E6EE1277A52B3F5C5A3 /* Pods-TrichJournal-TrichJournalUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 272258CFEBA20E765694A7BE1DB18960 /* Pods-TrichJournal-TrichJournalUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA575534378CCD545B134937D36F6898 /* Pods-TrichJournal-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A1D859829E704DE065A7DB91C3F7CB /* Pods-TrichJournal-dummy.m */; };
+		ADE0C4877C05C712D4909233319C70C9 /* Pods-TrichJournalTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 816B6DC62BCA3E4529426F6019C8C701 /* Pods-TrichJournalTests-dummy.m */; };
+		B544CA8FCBDC0989F639B7115929C351 /* BinaryReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275C883DE47280331718FBE9B75250E4 /* BinaryReader.swift */; };
+		B8416FC11FE7BF9EA0A750AF5493AA3B /* Pods-TrichJournal-TrichJournalUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 739C417A5F67E438840BEF9E4A6401D6 /* Pods-TrichJournal-TrichJournalUITests-dummy.m */; };
+		C0F3636D1A12C835C81E8AACF67495D3 /* Pods-TrichJournalTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1ADDDBA6BB799E383DCDFDE71B8BE0A0 /* Pods-TrichJournalTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C427E4D1B54104D5A8F7851EAAC0A6CF /* CSVWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6968BD611C9604D961DFBCFDA7D58885 /* CSVWriter.swift */; };
+		CD24136CF32EE4DB6AE0CD7CA70B823C /* CSV.swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAAF6A219F016839562BC0888E21A65 /* CSV.swift-dummy.m */; };
+		EEED3AA3198AF201A1BD44A62D081EDA /* CSVRowDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436B90B7880A530A36A8703D4AF2D37F /* CSVRowDecoder.swift */; };
+		F64114FEAC746D7A6428530E5502E8F3 /* CSVReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C3188FCE66B6D92AB0E2027E38CD21 /* CSVReader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		7E40E436B5A1713AB105595761FD31BA /* PBXContainerItemProxy */ = {
+		699BE97055CAE7E85094D12DE8407002 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9617FEF749C2A4DEB177789B70E08C51;
+			remoteInfo = CSV.swift;
+		};
+		E7F10938EB2428477A3F6DBD38156030 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9617FEF749C2A4DEB177789B70E08C51;
+			remoteInfo = CSV.swift;
+		};
+		FA54506418C10049E109BD24B521A2C4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -29,35 +54,53 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		069BF0738A201CF2B4053BFF886F20E4 /* Pods-TrichJournalTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TrichJournalTests.release.xcconfig"; sourceTree = "<group>"; };
-		0DF20176FBC714316CAFDE0DB9E61DCF /* Pods-TrichJournal-TrichJournalUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TrichJournal-TrichJournalUITests-dummy.m"; sourceTree = "<group>"; };
-		184807F99C772BCF1E52C584F0096499 /* Pods-TrichJournal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TrichJournal.debug.xcconfig"; sourceTree = "<group>"; };
-		1CC248C4C2E8E1D0B09CC19734E3699A /* Pods-TrichJournalTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TrichJournalTests-dummy.m"; sourceTree = "<group>"; };
-		2A8469A7395B44E48E00C4F48F28C5F3 /* Pods-TrichJournal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TrichJournal.release.xcconfig"; sourceTree = "<group>"; };
-		33ECC3998936259A6CD08F51A1418DCE /* Pods-TrichJournal-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TrichJournal-umbrella.h"; sourceTree = "<group>"; };
+		0AAAF6A219F016839562BC0888E21A65 /* CSV.swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CSV.swift-dummy.m"; sourceTree = "<group>"; };
+		1ADDDBA6BB799E383DCDFDE71B8BE0A0 /* Pods-TrichJournalTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TrichJournalTests-umbrella.h"; sourceTree = "<group>"; };
+		223FB73FEF60AD23AE343D061A091F91 /* Pods-TrichJournal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TrichJournal.release.xcconfig"; sourceTree = "<group>"; };
+		272258CFEBA20E765694A7BE1DB18960 /* Pods-TrichJournal-TrichJournalUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TrichJournal-TrichJournalUITests-umbrella.h"; sourceTree = "<group>"; };
+		275C883DE47280331718FBE9B75250E4 /* BinaryReader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BinaryReader.swift; path = Sources/CSV/BinaryReader.swift; sourceTree = "<group>"; };
+		2E0179011382C7A4646681A7AECD285C /* Pods-TrichJournalTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TrichJournalTests.modulemap"; sourceTree = "<group>"; };
 		384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		3FD1ACE3FBD1D2653ED9C3752E725363 /* Pods-TrichJournal-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TrichJournal-acknowledgements.markdown"; sourceTree = "<group>"; };
-		4B9A542063664D82CC9ADADB235BD82A /* Pods-TrichJournal-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TrichJournal-dummy.m"; sourceTree = "<group>"; };
-		4CF95817B192A935AC500B61A7D85E5C /* Pods-TrichJournal-TrichJournalUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TrichJournal-TrichJournalUITests-Info.plist"; sourceTree = "<group>"; };
-		5224117BE082569826F76F65F5C409CC /* Pods-TrichJournal-TrichJournalUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TrichJournal-TrichJournalUITests.release.xcconfig"; sourceTree = "<group>"; };
-		5C52949C86C3C318C74E876F8BEE782E /* Pods-TrichJournal-TrichJournalUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TrichJournal-TrichJournalUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		6431EC4B538846C27D546880A0CC24FD /* Pods-TrichJournalTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TrichJournalTests-Info.plist"; sourceTree = "<group>"; };
-		6848A33AF2D77AD8FBED180BEAAD742A /* Pods-TrichJournal-TrichJournalUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TrichJournal-TrichJournalUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		788C005787534D4E6E387B1861A774F7 /* Pods-TrichJournal-TrichJournalUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TrichJournal-TrichJournalUITests.modulemap"; sourceTree = "<group>"; };
-		8657DABFDEF9C4F05902CFE8EAC47562 /* Pods-TrichJournal-TrichJournalUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TrichJournal-TrichJournalUITests-umbrella.h"; sourceTree = "<group>"; };
-		90863C01017A57CB23560F005196FB2D /* Pods-TrichJournalTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TrichJournalTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		38FA6941EE189DE87C1E02A7A6017326 /* Pods-TrichJournalTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TrichJournalTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3C77063CB86AC67A618863559AD30ED8 /* Pods-TrichJournal-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TrichJournal-acknowledgements.plist"; sourceTree = "<group>"; };
+		436B90B7880A530A36A8703D4AF2D37F /* CSVRowDecoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSVRowDecoder.swift; path = Sources/CSV/CSVRowDecoder.swift; sourceTree = "<group>"; };
+		465F558998E16D39B73F56E45DD36B07 /* CSV.swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CSV.swift.modulemap; sourceTree = "<group>"; };
+		47FF868768AEBACAE7CEF63061A15F21 /* Legacy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Legacy.swift; path = Sources/CSV/Legacy.swift; sourceTree = "<group>"; };
+		4D5AB1548C3401ADFC77FD143458E987 /* CSVError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSVError.swift; path = Sources/CSV/CSVError.swift; sourceTree = "<group>"; };
+		50E2FC3EDFB95A1E026B49FFE2525B9F /* Pods-TrichJournal-TrichJournalUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TrichJournal-TrichJournalUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		649E73144F1686380EE0AEB4BB3849D3 /* CSV.swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CSV.swift.debug.xcconfig; sourceTree = "<group>"; };
+		65A5C5A209DA41885C0EC1FEF7B78DF0 /* Pods-TrichJournal-TrichJournalUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TrichJournal-TrichJournalUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6968BD611C9604D961DFBCFDA7D58885 /* CSVWriter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSVWriter.swift; path = Sources/CSV/CSVWriter.swift; sourceTree = "<group>"; };
+		6A297BF0B94E5A63A9FB9725A1872E89 /* Pods-TrichJournalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TrichJournalTests.debug.xcconfig"; sourceTree = "<group>"; };
+		72AFC7033AC5BD08656D231AC6A7C86A /* Pods-TrichJournal-TrichJournalUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TrichJournal-TrichJournalUITests.modulemap"; sourceTree = "<group>"; };
+		7307F36F80C93DF1E40FEBCED2856A01 /* Endian.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Endian.swift; path = Sources/CSV/Endian.swift; sourceTree = "<group>"; };
+		73470AA6B07D46EA5DEFD4BD4F45304D /* Pods-TrichJournal-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TrichJournal-frameworks.sh"; sourceTree = "<group>"; };
+		739C417A5F67E438840BEF9E4A6401D6 /* Pods-TrichJournal-TrichJournalUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TrichJournal-TrichJournalUITests-dummy.m"; sourceTree = "<group>"; };
+		816B6DC62BCA3E4529426F6019C8C701 /* Pods-TrichJournalTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TrichJournalTests-dummy.m"; sourceTree = "<group>"; };
+		875A9A47430B14C00C0541FF7288ABF6 /* Pods-TrichJournal-TrichJournalUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TrichJournal-TrichJournalUITests-Info.plist"; sourceTree = "<group>"; };
+		904D3BF37CB34F48F0DA5EC5B5BDA4BA /* Pods-TrichJournal.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TrichJournal.modulemap"; sourceTree = "<group>"; };
 		97297F37F3EFEB2852855F4D69DFDAA4 /* Pods-TrichJournal */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-TrichJournal"; path = Pods_TrichJournal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A4903DC2A92DAFEB61827BD2E1B96B36 /* Pods-TrichJournal-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TrichJournal-acknowledgements.plist"; sourceTree = "<group>"; };
-		A719B2144B0E4BC220DB3B41C0B0A38C /* Pods-TrichJournal-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TrichJournal-Info.plist"; sourceTree = "<group>"; };
-		A9A41AC7AABBB7773D66FAC8E4CCB0E0 /* Pods-TrichJournalTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TrichJournalTests.modulemap"; sourceTree = "<group>"; };
-		BD659D26CDA4938C0C92F6C6366913CA /* Pods-TrichJournal-TrichJournalUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TrichJournal-TrichJournalUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		CA49F2267EAD73365B4531A67A6E8D92 /* Pods-TrichJournal.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TrichJournal.modulemap"; sourceTree = "<group>"; };
-		D4D97503B21F28D0AD29BCCFFE7F8CBE /* Pods-TrichJournalTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TrichJournalTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		ED15C3CCDFB1A4D401D1C0AB6E21CE61 /* Pods-TrichJournalTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TrichJournalTests-umbrella.h"; sourceTree = "<group>"; };
+		9EC843986770307A58BE233B21CB69F5 /* CSV.swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CSV.swift-umbrella.h"; sourceTree = "<group>"; };
+		9F728973CDDF46925E2505B727D816CE /* Pods-TrichJournal-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TrichJournal-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A88793235B53022C96AF3479C150C925 /* CSV.swift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CSV.swift-Info.plist"; sourceTree = "<group>"; };
+		A8C3188FCE66B6D92AB0E2027E38CD21 /* CSVReader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSVReader.swift; path = Sources/CSV/CSVReader.swift; sourceTree = "<group>"; };
+		AC54F61F17BF5E97EED8200EA9E0E81E /* UnicodeIterator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UnicodeIterator.swift; path = Sources/CSV/UnicodeIterator.swift; sourceTree = "<group>"; };
+		AD216F01DBDA431E3E5DB8B8437A8A15 /* Pods-TrichJournal-TrichJournalUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TrichJournal-TrichJournalUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B3962B6A9FEFB0867BEFF7A9630A8CA7 /* Pods-TrichJournalTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TrichJournalTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		B3A433166DC28BC7283F63D821D59D42 /* Pods-TrichJournal-TrichJournalUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TrichJournal-TrichJournalUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BE5E1CE8769950763CFE5F9A16892E90 /* CSV.swift */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CSV.swift; path = CSV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1A1D859829E704DE065A7DB91C3F7CB /* Pods-TrichJournal-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TrichJournal-dummy.m"; sourceTree = "<group>"; };
+		C7DE8CB23F95C4DEB8B0C0D7C2229CF8 /* Pods-TrichJournal-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TrichJournal-umbrella.h"; sourceTree = "<group>"; };
+		C9315CE92930BD44BAABB521F0FDCD6C /* CSV.swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CSV.swift-prefix.pch"; sourceTree = "<group>"; };
+		CB0DD768E97304A0D007DA226A4E711D /* Pods-TrichJournal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TrichJournal.debug.xcconfig"; sourceTree = "<group>"; };
+		D4C284B447C8FAD3ED768DBC76FAAAB5 /* CSV.swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CSV.swift.release.xcconfig; sourceTree = "<group>"; };
+		E50EB88D61DB0C64D2C0F2A910AABB4B /* Pods-TrichJournalTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TrichJournalTests-Info.plist"; sourceTree = "<group>"; };
+		E52C4C28183DEB8856896A82D74DCCC2 /* Pods-TrichJournal-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TrichJournal-Info.plist"; sourceTree = "<group>"; };
+		E8C171155209362351E6744DAFC54CD8 /* Pods-TrichJournal-TrichJournalUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TrichJournal-TrichJournalUITests-frameworks.sh"; sourceTree = "<group>"; };
 		F068B2A3B1BB723CA1CCEEC18B1181B6 /* Pods-TrichJournalTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-TrichJournalTests"; path = Pods_TrichJournalTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5CAAA3724F335C2EF80187978B835D8 /* Pods-TrichJournalTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TrichJournalTests.release.xcconfig"; sourceTree = "<group>"; };
 		F6656694D31C4E9FC1578AE70ED452AB /* Pods-TrichJournal-TrichJournalUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-TrichJournal-TrichJournalUITests"; path = Pods_TrichJournal_TrichJournalUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F6C75D26DD64F91AB476E0C86F7F7422 /* Pods-TrichJournalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TrichJournalTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,81 +112,114 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C18D24112910584EFC64FBD1483F02A1 /* Frameworks */ = {
+		3CD5C3F692630C7371856D0A6F81D11E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34A440C2A5D14D8098496CE7CA2B2378 /* Foundation.framework in Frameworks */,
+				67E12EC3BA78D8D83A53A68C48234292 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EF004D9BF7C3299BA6A6623188E1B3F0 /* Frameworks */ = {
+		D6F99B8FCB1079ED7A8DED9D3865DBC1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				991ABC233D2C3228E2B639C12B08F1D2 /* Foundation.framework in Frameworks */,
+				768B43C98355CDE2CDFA8FE25B9AF985 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E17BE5D9CB334E968AA80B3E074F273D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92A8C12E482F47E636700A1B41BA603C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3A345C0D61EB4AA3AE16390D3BF55D0F /* Pods-TrichJournalTests */ = {
+		268987EBAFD98334A9EE895E16766278 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				A9A41AC7AABBB7773D66FAC8E4CCB0E0 /* Pods-TrichJournalTests.modulemap */,
-				90863C01017A57CB23560F005196FB2D /* Pods-TrichJournalTests-acknowledgements.markdown */,
-				D4D97503B21F28D0AD29BCCFFE7F8CBE /* Pods-TrichJournalTests-acknowledgements.plist */,
-				1CC248C4C2E8E1D0B09CC19734E3699A /* Pods-TrichJournalTests-dummy.m */,
-				6431EC4B538846C27D546880A0CC24FD /* Pods-TrichJournalTests-Info.plist */,
-				ED15C3CCDFB1A4D401D1C0AB6E21CE61 /* Pods-TrichJournalTests-umbrella.h */,
-				F6C75D26DD64F91AB476E0C86F7F7422 /* Pods-TrichJournalTests.debug.xcconfig */,
-				069BF0738A201CF2B4053BFF886F20E4 /* Pods-TrichJournalTests.release.xcconfig */,
+				94CAD196E8FF93A4F8A7B1F489A03CF9 /* Pods-TrichJournal */,
+				AE3A44F3C2F34D1E95C478906414DDD8 /* Pods-TrichJournal-TrichJournalUITests */,
+				83B3B2037930EA6DE45BFE4D0E2246C6 /* Pods-TrichJournalTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		4993A0D61B28CE3A166D69FD83F71DD4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				465F558998E16D39B73F56E45DD36B07 /* CSV.swift.modulemap */,
+				0AAAF6A219F016839562BC0888E21A65 /* CSV.swift-dummy.m */,
+				A88793235B53022C96AF3479C150C925 /* CSV.swift-Info.plist */,
+				C9315CE92930BD44BAABB521F0FDCD6C /* CSV.swift-prefix.pch */,
+				9EC843986770307A58BE233B21CB69F5 /* CSV.swift-umbrella.h */,
+				649E73144F1686380EE0AEB4BB3849D3 /* CSV.swift.debug.xcconfig */,
+				D4C284B447C8FAD3ED768DBC76FAAAB5 /* CSV.swift.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CSV.swift";
+			sourceTree = "<group>";
+		};
+		58732056964C2D816890179162BA432D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EBDB7488CED924C504A98D2D4C1DD299 /* CSV.swift */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		83B3B2037930EA6DE45BFE4D0E2246C6 /* Pods-TrichJournalTests */ = {
+			isa = PBXGroup;
+			children = (
+				2E0179011382C7A4646681A7AECD285C /* Pods-TrichJournalTests.modulemap */,
+				38FA6941EE189DE87C1E02A7A6017326 /* Pods-TrichJournalTests-acknowledgements.markdown */,
+				B3962B6A9FEFB0867BEFF7A9630A8CA7 /* Pods-TrichJournalTests-acknowledgements.plist */,
+				816B6DC62BCA3E4529426F6019C8C701 /* Pods-TrichJournalTests-dummy.m */,
+				E50EB88D61DB0C64D2C0F2A910AABB4B /* Pods-TrichJournalTests-Info.plist */,
+				1ADDDBA6BB799E383DCDFDE71B8BE0A0 /* Pods-TrichJournalTests-umbrella.h */,
+				6A297BF0B94E5A63A9FB9725A1872E89 /* Pods-TrichJournalTests.debug.xcconfig */,
+				F5CAAA3724F335C2EF80187978B835D8 /* Pods-TrichJournalTests.release.xcconfig */,
 			);
 			name = "Pods-TrichJournalTests";
 			path = "Target Support Files/Pods-TrichJournalTests";
 			sourceTree = "<group>";
 		};
-		457A193106FB53F64AB5FDFB3FC495B9 /* Products */ = {
+		94CAD196E8FF93A4F8A7B1F489A03CF9 /* Pods-TrichJournal */ = {
 			isa = PBXGroup;
 			children = (
-				97297F37F3EFEB2852855F4D69DFDAA4 /* Pods-TrichJournal */,
-				F6656694D31C4E9FC1578AE70ED452AB /* Pods-TrichJournal-TrichJournalUITests */,
-				F068B2A3B1BB723CA1CCEEC18B1181B6 /* Pods-TrichJournalTests */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		48D45B962602DEBD4FF23A6146CDD9D9 /* Pods-TrichJournal-TrichJournalUITests */ = {
-			isa = PBXGroup;
-			children = (
-				788C005787534D4E6E387B1861A774F7 /* Pods-TrichJournal-TrichJournalUITests.modulemap */,
-				6848A33AF2D77AD8FBED180BEAAD742A /* Pods-TrichJournal-TrichJournalUITests-acknowledgements.markdown */,
-				BD659D26CDA4938C0C92F6C6366913CA /* Pods-TrichJournal-TrichJournalUITests-acknowledgements.plist */,
-				0DF20176FBC714316CAFDE0DB9E61DCF /* Pods-TrichJournal-TrichJournalUITests-dummy.m */,
-				4CF95817B192A935AC500B61A7D85E5C /* Pods-TrichJournal-TrichJournalUITests-Info.plist */,
-				8657DABFDEF9C4F05902CFE8EAC47562 /* Pods-TrichJournal-TrichJournalUITests-umbrella.h */,
-				5C52949C86C3C318C74E876F8BEE782E /* Pods-TrichJournal-TrichJournalUITests.debug.xcconfig */,
-				5224117BE082569826F76F65F5C409CC /* Pods-TrichJournal-TrichJournalUITests.release.xcconfig */,
-			);
-			name = "Pods-TrichJournal-TrichJournalUITests";
-			path = "Target Support Files/Pods-TrichJournal-TrichJournalUITests";
-			sourceTree = "<group>";
-		};
-		A1905E24B99CB285916FF94E716B32A3 /* Pods-TrichJournal */ = {
-			isa = PBXGroup;
-			children = (
-				CA49F2267EAD73365B4531A67A6E8D92 /* Pods-TrichJournal.modulemap */,
-				3FD1ACE3FBD1D2653ED9C3752E725363 /* Pods-TrichJournal-acknowledgements.markdown */,
-				A4903DC2A92DAFEB61827BD2E1B96B36 /* Pods-TrichJournal-acknowledgements.plist */,
-				4B9A542063664D82CC9ADADB235BD82A /* Pods-TrichJournal-dummy.m */,
-				A719B2144B0E4BC220DB3B41C0B0A38C /* Pods-TrichJournal-Info.plist */,
-				33ECC3998936259A6CD08F51A1418DCE /* Pods-TrichJournal-umbrella.h */,
-				184807F99C772BCF1E52C584F0096499 /* Pods-TrichJournal.debug.xcconfig */,
-				2A8469A7395B44E48E00C4F48F28C5F3 /* Pods-TrichJournal.release.xcconfig */,
+				904D3BF37CB34F48F0DA5EC5B5BDA4BA /* Pods-TrichJournal.modulemap */,
+				9F728973CDDF46925E2505B727D816CE /* Pods-TrichJournal-acknowledgements.markdown */,
+				3C77063CB86AC67A618863559AD30ED8 /* Pods-TrichJournal-acknowledgements.plist */,
+				C1A1D859829E704DE065A7DB91C3F7CB /* Pods-TrichJournal-dummy.m */,
+				73470AA6B07D46EA5DEFD4BD4F45304D /* Pods-TrichJournal-frameworks.sh */,
+				E52C4C28183DEB8856896A82D74DCCC2 /* Pods-TrichJournal-Info.plist */,
+				C7DE8CB23F95C4DEB8B0C0D7C2229CF8 /* Pods-TrichJournal-umbrella.h */,
+				CB0DD768E97304A0D007DA226A4E711D /* Pods-TrichJournal.debug.xcconfig */,
+				223FB73FEF60AD23AE343D061A091F91 /* Pods-TrichJournal.release.xcconfig */,
 			);
 			name = "Pods-TrichJournal";
 			path = "Target Support Files/Pods-TrichJournal";
+			sourceTree = "<group>";
+		};
+		AE3A44F3C2F34D1E95C478906414DDD8 /* Pods-TrichJournal-TrichJournalUITests */ = {
+			isa = PBXGroup;
+			children = (
+				72AFC7033AC5BD08656D231AC6A7C86A /* Pods-TrichJournal-TrichJournalUITests.modulemap */,
+				B3A433166DC28BC7283F63D821D59D42 /* Pods-TrichJournal-TrichJournalUITests-acknowledgements.markdown */,
+				50E2FC3EDFB95A1E026B49FFE2525B9F /* Pods-TrichJournal-TrichJournalUITests-acknowledgements.plist */,
+				739C417A5F67E438840BEF9E4A6401D6 /* Pods-TrichJournal-TrichJournalUITests-dummy.m */,
+				E8C171155209362351E6744DAFC54CD8 /* Pods-TrichJournal-TrichJournalUITests-frameworks.sh */,
+				875A9A47430B14C00C0541FF7288ABF6 /* Pods-TrichJournal-TrichJournalUITests-Info.plist */,
+				272258CFEBA20E765694A7BE1DB18960 /* Pods-TrichJournal-TrichJournalUITests-umbrella.h */,
+				AD216F01DBDA431E3E5DB8B8437A8A15 /* Pods-TrichJournal-TrichJournalUITests.debug.xcconfig */,
+				65A5C5A209DA41885C0EC1FEF7B78DF0 /* Pods-TrichJournal-TrichJournalUITests.release.xcconfig */,
+			);
+			name = "Pods-TrichJournal-TrichJournalUITests";
+			path = "Target Support Files/Pods-TrichJournal-TrichJournalUITests";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -151,8 +227,9 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				457A193106FB53F64AB5FDFB3FC495B9 /* Products */,
-				FBBF6BFB38C76EDFDE8ADC2C20EE19DE /* Targets Support Files */,
+				58732056964C2D816890179162BA432D /* Pods */,
+				F629C699BEB59C2DFEAD62741B084852 /* Products */,
+				268987EBAFD98334A9EE895E16766278 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -172,24 +249,42 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		FBBF6BFB38C76EDFDE8ADC2C20EE19DE /* Targets Support Files */ = {
+		EBDB7488CED924C504A98D2D4C1DD299 /* CSV.swift */ = {
 			isa = PBXGroup;
 			children = (
-				A1905E24B99CB285916FF94E716B32A3 /* Pods-TrichJournal */,
-				48D45B962602DEBD4FF23A6146CDD9D9 /* Pods-TrichJournal-TrichJournalUITests */,
-				3A345C0D61EB4AA3AE16390D3BF55D0F /* Pods-TrichJournalTests */,
+				275C883DE47280331718FBE9B75250E4 /* BinaryReader.swift */,
+				4D5AB1548C3401ADFC77FD143458E987 /* CSVError.swift */,
+				A8C3188FCE66B6D92AB0E2027E38CD21 /* CSVReader.swift */,
+				436B90B7880A530A36A8703D4AF2D37F /* CSVRowDecoder.swift */,
+				6968BD611C9604D961DFBCFDA7D58885 /* CSVWriter.swift */,
+				7307F36F80C93DF1E40FEBCED2856A01 /* Endian.swift */,
+				47FF868768AEBACAE7CEF63061A15F21 /* Legacy.swift */,
+				AC54F61F17BF5E97EED8200EA9E0E81E /* UnicodeIterator.swift */,
+				4993A0D61B28CE3A166D69FD83F71DD4 /* Support Files */,
 			);
-			name = "Targets Support Files";
+			name = CSV.swift;
+			path = CSV.swift;
+			sourceTree = "<group>";
+		};
+		F629C699BEB59C2DFEAD62741B084852 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE5E1CE8769950763CFE5F9A16892E90 /* CSV.swift */,
+				97297F37F3EFEB2852855F4D69DFDAA4 /* Pods-TrichJournal */,
+				F6656694D31C4E9FC1578AE70ED452AB /* Pods-TrichJournal-TrichJournalUITests */,
+				F068B2A3B1BB723CA1CCEEC18B1181B6 /* Pods-TrichJournalTests */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		2389262B8CD15DC825FAA914384FDB59 /* Headers */ = {
+		4E984D72A61022F69D924442A3C2F9E7 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6FA8AA7F41232566B51A62293848A312 /* Pods-TrichJournal-umbrella.h in Headers */,
+				807108020F1310862B2B54EFBD5B3D56 /* Pods-TrichJournal-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,11 +296,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9DDF11A65F7E72E5F57CDD0661FFA79D /* Headers */ = {
+		EDB0DAE1A1239E4377C3F35EAE691703 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				283ABEC86CF5DDD8E080F97B6EEF777D /* Pods-TrichJournal-TrichJournalUITests-umbrella.h in Headers */,
+				9E5334FCBAE40E6EE1277A52B3F5C5A3 /* Pods-TrichJournal-TrichJournalUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F70570C0D337EF57373CE40A948EA9D6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C6533FEF2774A80EBFFD54DD1F30BB5 /* CSV.swift-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,16 +317,17 @@
 /* Begin PBXNativeTarget section */
 		46ED8BA0B03A3BBC4484B30EC7CE407A /* Pods-TrichJournal-TrichJournalUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9F24DB6FB1D1749F9EA5B0167B9892A0 /* Build configuration list for PBXNativeTarget "Pods-TrichJournal-TrichJournalUITests" */;
+			buildConfigurationList = 8199D5809255C5FDB7068A763A52BB03 /* Build configuration list for PBXNativeTarget "Pods-TrichJournal-TrichJournalUITests" */;
 			buildPhases = (
-				9DDF11A65F7E72E5F57CDD0661FFA79D /* Headers */,
-				B55142E6B70661D498583D4D5C9EBCAD /* Sources */,
-				C18D24112910584EFC64FBD1483F02A1 /* Frameworks */,
-				A09AF5EA8B725515AA09959A016B8413 /* Resources */,
+				EDB0DAE1A1239E4377C3F35EAE691703 /* Headers */,
+				E1C70335AC99B34E983CE60C9B74CD11 /* Sources */,
+				3CD5C3F692630C7371856D0A6F81D11E /* Frameworks */,
+				6CFC6FBC3C36DFE7F03736E63F945EF3 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				FA3AFA5AAEF67DF543D52D55A1DDD147 /* PBXTargetDependency */,
 			);
 			name = "Pods-TrichJournal-TrichJournalUITests";
 			productName = Pods_TrichJournal_TrichJournalUITests;
@@ -232,20 +336,39 @@
 		};
 		82A90CCF5383BB223538FFEBE7226374 /* Pods-TrichJournal */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C8065895AD4582028BF952BF39F2AB58 /* Build configuration list for PBXNativeTarget "Pods-TrichJournal" */;
+			buildConfigurationList = AFA93D0B6B914F252DB1E01D293797D4 /* Build configuration list for PBXNativeTarget "Pods-TrichJournal" */;
 			buildPhases = (
-				2389262B8CD15DC825FAA914384FDB59 /* Headers */,
-				7143FFD15FA426E48CBAF6EF3B414474 /* Sources */,
-				EF004D9BF7C3299BA6A6623188E1B3F0 /* Frameworks */,
-				66B7DDB30C34F6C2B36A17A69D78A33B /* Resources */,
+				4E984D72A61022F69D924442A3C2F9E7 /* Headers */,
+				33A63D9F45A2648DA0DF25809F293EC6 /* Sources */,
+				D6F99B8FCB1079ED7A8DED9D3865DBC1 /* Frameworks */,
+				30FC66CC8862EAF3F4470DF12A567E91 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				57DD6D237F7654158906A5142741F71A /* PBXTargetDependency */,
+			);
+			name = "Pods-TrichJournal";
+			productName = Pods_TrichJournal;
+			productReference = 97297F37F3EFEB2852855F4D69DFDAA4 /* Pods-TrichJournal */;
+			productType = "com.apple.product-type.framework";
+		};
+		9617FEF749C2A4DEB177789B70E08C51 /* CSV.swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B786AF86F55DBD782C9214DCACB1BC0A /* Build configuration list for PBXNativeTarget "CSV.swift" */;
+			buildPhases = (
+				F70570C0D337EF57373CE40A948EA9D6 /* Headers */,
+				BC5B58ED30923C6C90ECD8B6FFE34467 /* Sources */,
+				E17BE5D9CB334E968AA80B3E074F273D /* Frameworks */,
+				81CEE9F5EE4271F11125E7E404BFA3BE /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-TrichJournal";
-			productName = Pods_TrichJournal;
-			productReference = 97297F37F3EFEB2852855F4D69DFDAA4 /* Pods-TrichJournal */;
+			name = CSV.swift;
+			productName = CSV;
+			productReference = BE5E1CE8769950763CFE5F9A16892E90 /* CSV.swift */;
 			productType = "com.apple.product-type.framework";
 		};
 		CE66156E15FE8B6D7162F0BD373F0077 /* Pods-TrichJournalTests */ = {
@@ -260,7 +383,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				0D0673F26ECBFE802047088E95D6042A /* PBXTargetDependency */,
+				B962215D31DB806A3E034B4C012AACC7 /* PBXTargetDependency */,
 			);
 			name = "Pods-TrichJournalTests";
 			productName = Pods_TrichJournalTests;
@@ -287,10 +410,11 @@
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
 			minimizedProjectReferenceProxies = 0;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 457A193106FB53F64AB5FDFB3FC495B9 /* Products */;
+			productRefGroup = F629C699BEB59C2DFEAD62741B084852 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				9617FEF749C2A4DEB177789B70E08C51 /* CSV.swift */,
 				82A90CCF5383BB223538FFEBE7226374 /* Pods-TrichJournal */,
 				46ED8BA0B03A3BBC4484B30EC7CE407A /* Pods-TrichJournal-TrichJournalUITests */,
 				CE66156E15FE8B6D7162F0BD373F0077 /* Pods-TrichJournalTests */,
@@ -299,14 +423,21 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		66B7DDB30C34F6C2B36A17A69D78A33B /* Resources */ = {
+		30FC66CC8862EAF3F4470DF12A567E91 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A09AF5EA8B725515AA09959A016B8413 /* Resources */ = {
+		6CFC6FBC3C36DFE7F03736E63F945EF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81CEE9F5EE4271F11125E7E404BFA3BE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -331,34 +462,141 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7143FFD15FA426E48CBAF6EF3B414474 /* Sources */ = {
+		33A63D9F45A2648DA0DF25809F293EC6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8DCE1272AF2368DFD8BA37AFCF81DAF0 /* Pods-TrichJournal-dummy.m in Sources */,
+				AA575534378CCD545B134937D36F6898 /* Pods-TrichJournal-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B55142E6B70661D498583D4D5C9EBCAD /* Sources */ = {
+		BC5B58ED30923C6C90ECD8B6FFE34467 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				757C5C4EDA923E5EDE762CD7A489A616 /* Pods-TrichJournal-TrichJournalUITests-dummy.m in Sources */,
+				B544CA8FCBDC0989F639B7115929C351 /* BinaryReader.swift in Sources */,
+				CD24136CF32EE4DB6AE0CD7CA70B823C /* CSV.swift-dummy.m in Sources */,
+				2EEF9998DBBD61C2B8C97C10313772CC /* CSVError.swift in Sources */,
+				F64114FEAC746D7A6428530E5502E8F3 /* CSVReader.swift in Sources */,
+				EEED3AA3198AF201A1BD44A62D081EDA /* CSVRowDecoder.swift in Sources */,
+				C427E4D1B54104D5A8F7851EAAC0A6CF /* CSVWriter.swift in Sources */,
+				0EFEF6DA469FAA1B116FF1505DA8D1CA /* Endian.swift in Sources */,
+				7A72BA046C18624A7A85C6B87124D897 /* Legacy.swift in Sources */,
+				512C833231B2AE6BA4656D75CC4A35F4 /* UnicodeIterator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1C70335AC99B34E983CE60C9B74CD11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8416FC11FE7BF9EA0A750AF5493AA3B /* Pods-TrichJournal-TrichJournalUITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0D0673F26ECBFE802047088E95D6042A /* PBXTargetDependency */ = {
+		57DD6D237F7654158906A5142741F71A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CSV.swift;
+			target = 9617FEF749C2A4DEB177789B70E08C51 /* CSV.swift */;
+			targetProxy = 699BE97055CAE7E85094D12DE8407002 /* PBXContainerItemProxy */;
+		};
+		B962215D31DB806A3E034B4C012AACC7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-TrichJournal";
 			target = 82A90CCF5383BB223538FFEBE7226374 /* Pods-TrichJournal */;
-			targetProxy = 7E40E436B5A1713AB105595761FD31BA /* PBXContainerItemProxy */;
+			targetProxy = FA54506418C10049E109BD24B521A2C4 /* PBXContainerItemProxy */;
+		};
+		FA3AFA5AAEF67DF543D52D55A1DDD147 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CSV.swift;
+			target = 9617FEF749C2A4DEB177789B70E08C51 /* CSV.swift */;
+			targetProxy = E7F10938EB2428477A3F6DBD38156030 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		02CC04FF968D9B90DCA17BAF0365FBB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD216F01DBDA431E3E5DB8B8437A8A15 /* Pods-TrichJournal-TrichJournalUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-TrichJournal-TrichJournalUITests/Pods-TrichJournal-TrichJournalUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TrichJournal-TrichJournalUITests/Pods-TrichJournal-TrichJournalUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		222DA20E9D4CD11CBFAC0A925938CBFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 223FB73FEF60AD23AE343D061A091F91 /* Pods-TrichJournal.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-TrichJournal/Pods-TrichJournal-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TrichJournal/Pods-TrichJournal.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		531AB9B51913EE274022D67EB63CB4E1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -421,48 +659,9 @@
 			};
 			name = Release;
 		};
-		59A24A3F527C76502A486925A192B1C7 /* Debug */ = {
+		5360B1520E705709A7254CBEBCE4B863 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5C52949C86C3C318C74E876F8BEE782E /* Pods-TrichJournal-TrichJournalUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				INFOPLIST_FILE = "Target Support Files/Pods-TrichJournal-TrichJournalUITests/Pods-TrichJournal-TrichJournalUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-TrichJournal-TrichJournalUITests/Pods-TrichJournal-TrichJournalUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		5BF1312B788A66BEE02316E8F68E842E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 184807F99C772BCF1E52C584F0096499 /* Pods-TrichJournal.debug.xcconfig */;
+			baseConfigurationReference = CB0DD768E97304A0D007DA226A4E711D /* Pods-TrichJournal.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -499,9 +698,9 @@
 			};
 			name = Debug;
 		};
-		816D558A4F8F701792263A309B067487 /* Release */ = {
+		6B8D11D0B4B4C27B95C8E7B57168B00C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5224117BE082569826F76F65F5C409CC /* Pods-TrichJournal-TrichJournalUITests.release.xcconfig */;
+			baseConfigurationReference = 65A5C5A209DA41885C0EC1FEF7B78DF0 /* Pods-TrichJournal-TrichJournalUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -541,7 +740,7 @@
 		};
 		8E301740E0BE5538123C73BD078BCA1B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 069BF0738A201CF2B4053BFF886F20E4 /* Pods-TrichJournalTests.release.xcconfig */;
+			baseConfigurationReference = F5CAAA3724F335C2EF80187978B835D8 /* Pods-TrichJournalTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -581,7 +780,7 @@
 		};
 		8F80BAD99A07816A198239854148B1FA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F6C75D26DD64F91AB476E0C86F7F7422 /* Pods-TrichJournalTests.debug.xcconfig */;
+			baseConfigurationReference = 6A297BF0B94E5A63A9FB9725A1872E89 /* Pods-TrichJournalTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -684,12 +883,10 @@
 			};
 			name = Debug;
 		};
-		DEEFCDFB892850286876ACFA0E2CFFF7 /* Release */ = {
+		DBCA8CEA58C466B949BEC2A7178C4603 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2A8469A7395B44E48E00C4F48F28C5F3 /* Pods-TrichJournal.release.xcconfig */;
+			baseConfigurationReference = D4C284B447C8FAD3ED768DBC76FAAAB5 /* CSV.swift.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -700,29 +897,68 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_MODULE_VERIFIER = NO;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				INFOPLIST_FILE = "Target Support Files/Pods-TrichJournal/Pods-TrichJournal-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/CSV.swift/CSV.swift-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/CSV.swift/CSV.swift-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-TrichJournal/Pods-TrichJournal.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/CSV.swift/CSV.swift.modulemap";
+				PRODUCT_MODULE_NAME = CSV;
+				PRODUCT_NAME = CSV;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		ECE9087501159BC7111CC28AFFEA2C7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 649E73144F1686380EE0AEB4BB3849D3 /* CSV.swift.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/CSV.swift/CSV.swift-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/CSV.swift/CSV.swift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CSV.swift/CSV.swift.modulemap";
+				PRODUCT_MODULE_NAME = CSV;
+				PRODUCT_NAME = CSV;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
@@ -745,20 +981,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9F24DB6FB1D1749F9EA5B0167B9892A0 /* Build configuration list for PBXNativeTarget "Pods-TrichJournal-TrichJournalUITests" */ = {
+		8199D5809255C5FDB7068A763A52BB03 /* Build configuration list for PBXNativeTarget "Pods-TrichJournal-TrichJournalUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				59A24A3F527C76502A486925A192B1C7 /* Debug */,
-				816D558A4F8F701792263A309B067487 /* Release */,
+				02CC04FF968D9B90DCA17BAF0365FBB1 /* Debug */,
+				6B8D11D0B4B4C27B95C8E7B57168B00C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C8065895AD4582028BF952BF39F2AB58 /* Build configuration list for PBXNativeTarget "Pods-TrichJournal" */ = {
+		AFA93D0B6B914F252DB1E01D293797D4 /* Build configuration list for PBXNativeTarget "Pods-TrichJournal" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5BF1312B788A66BEE02316E8F68E842E /* Debug */,
-				DEEFCDFB892850286876ACFA0E2CFFF7 /* Release */,
+				5360B1520E705709A7254CBEBCE4B863 /* Debug */,
+				222DA20E9D4CD11CBFAC0A925938CBFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B786AF86F55DBD782C9214DCACB1BC0A /* Build configuration list for PBXNativeTarget "CSV.swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECE9087501159BC7111CC28AFFEA2C7D /* Debug */,
+				DBCA8CEA58C466B949BEC2A7178C4603 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

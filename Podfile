@@ -6,6 +6,8 @@ target 'TrichJournal' do
   use_frameworks!
 
   # Pods for TrichJournal
+  
+  pod 'CSV.swift', '~> 2.4.3'
 
 
   target 'TrichJournalTests' do
