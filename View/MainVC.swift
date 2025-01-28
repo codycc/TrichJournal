@@ -22,6 +22,10 @@ class MainVC: UIViewController {
     
     @IBOutlet weak var mainTableView: UITableView!
     
+    @IBOutlet weak var addIncidentNewBtn: UIImageView!
+    
+    @IBOutlet weak var backgroundAddImage: UIView!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,9 +33,14 @@ class MainVC: UIViewController {
         mainTableView.dataSource = self
         
         mainTitleLabel.font = UIFont(name:"Roboto-ExtraLight",size:30)
+        backgroundAddImage.layer.cornerRadius = backgroundAddImage.frame.size.width/2
+        backgroundAddImage.clipsToBounds = true
+
+        backgroundAddImage.layer.borderColor = UIColor.white.cgColor
+        backgroundAddImage.layer.borderWidth = 5.0
 
         let goToAddIncidentTapped = UITapGestureRecognizer(target: self, action: #selector(goToNewEntryVC))
-        addIncidentImage.addGestureRecognizer(goToAddIncidentTapped)
+        addIncidentNewBtn.addGestureRecognizer(goToAddIncidentTapped)
         loadIncidents()
         
         mainTableView.register(UINib(nibName: "IncidentCell", bundle: nil), forCellReuseIdentifier: "IncidentCell")
@@ -88,7 +97,7 @@ extension MainVC: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 150.00
+        return 173.00
     }
     
     

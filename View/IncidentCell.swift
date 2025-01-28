@@ -10,9 +10,14 @@ import UIKit
 class IncidentCell: UITableViewCell {
 
     @IBOutlet weak var incidentLabel: UILabel!
-   
-  
     @IBOutlet weak var containerView: UIView!
+    @IBOutlet weak var intensityLbl: UILabel!
+    @IBOutlet weak var areaLbl: UILabel!
+    @IBOutlet weak var numberOfHairsLbl: UILabel!
+    @IBOutlet weak var didYouDigestLbl: UILabel!
+    @IBOutlet weak var lengthOfTimeLbl: UILabel!
+    @IBOutlet weak var timeLbl: UILabel!
+    @IBOutlet weak var dateLbl: UILabel!
     
     
     override func awakeFromNib() {
@@ -25,8 +30,28 @@ class IncidentCell: UITableViewCell {
     
     func configureCell(incident: Incident ) {
         
-        containerView.dropShadow()
-        incidentLabel?.text = incident.situation
+        incidentLabel.font = UIFont(name:"Roboto-SemiBold",size:30)
+        incidentLabel.text = incident.situation
+        lengthOfTimeLbl.text = String("\(incident.howLong) minutes")
+        numberOfHairsLbl.text = String(incident.numberOfHairsPulled)
+        areaLbl.text = incident.areaAffected
+        if incident.didYouDigest == true {
+            didYouDigestLbl.text = "Yes"
+        } else {
+            didYouDigestLbl.text = "No"
+        }
+        
+        
+        let date = NSDate(timeIntervalSince1970: incident.dateTime)
+        let formatter = DateFormatter()
+        formatter.dateFormat = "MM-dd-yyyy"
+        let timeFormatter = DateFormatter()
+        timeFormatter.dateFormat = "h:mm a"
+        let finalDate = formatter.string(from: date as Date)
+        let finalTime = timeFormatter.string(from: date as Date)
+        timeLbl.text = String(describing: finalTime)
+        dateLbl.text = String(describing: finalDate)
+        intensityLbl.text = String(incident.intensity)
         
     }
 
@@ -43,20 +68,6 @@ class IncidentCell: UITableViewCell {
     
 }
 
-extension UIView {
 
-  func dropShadow() {
-      layer.masksToBounds = false
-      layer.shadowColor = UIColor.black.cgColor
-      layer.shadowOpacity = 0.6
-      layer.shadowOffset = CGSize.zero
-      layer.shadowRadius = 4.0
-      layer.cornerRadius = 2.0
-      //layer.shadowPath = UIBezierPath(rect: self.bounds).cgPath
-      
-      layer.shouldRasterize = true
-      layer.rasterizationScale = UIScreen.main.scale
-  }
-}
 
 
