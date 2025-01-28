@@ -133,22 +133,32 @@
                                             <constraint firstAttribute="bottom" secondItem="0aC-ZI-fkB" secondAttribute="bottom" constant="30" id="wtS-qa-Zkw"/>
                                         </constraints>
                                     </view>
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow.down.app.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="xKK-je-tds">
+                                        <rect key="frame" x="256.66666666666669" y="11.666666666666664" width="126.33333333333331" height="56.999999999999993"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="xeZ-HJ-rW8"/>
+                                        </constraints>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" name="BottomNavigation"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="HRR-ia-azD" secondAttribute="bottom" id="1rh-I3-efR"/>
+                                    <constraint firstItem="xKK-je-tds" firstAttribute="leading" secondItem="HRR-ia-azD" secondAttribute="trailing" constant="10" id="BMt-q7-OJb"/>
+                                    <constraint firstAttribute="bottom" secondItem="xKK-je-tds" secondAttribute="bottom" constant="10" id="O90-yG-deL"/>
                                     <constraint firstAttribute="height" constant="80" id="QWf-AI-dHv"/>
+                                    <constraint firstAttribute="trailing" secondItem="xKK-je-tds" secondAttribute="trailing" constant="10" id="RXl-hs-12u"/>
                                     <constraint firstItem="HRR-ia-azD" firstAttribute="centerX" secondItem="TFs-nJ-dJ4" secondAttribute="centerX" id="uMW-9h-42k"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ava-xc-RLh">
                                 <rect key="frame" x="0.0" y="100" width="393" height="70"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow.up.and.down" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ycF-uX-KuV">
-                                        <rect key="frame" x="328" y="10.999999999999996" width="50" height="48.333333333333329"/>
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sort-icon" translatesAutoresizingMaskIntoConstraints="NO" id="ycF-uX-KuV">
+                                        <rect key="frame" x="338" y="10" width="40" height="50"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="18E-en-La4"/>
+                                            <constraint firstAttribute="width" constant="40" id="18E-en-La4"/>
                                             <constraint firstAttribute="height" constant="50" id="hRd-FT-ftM"/>
                                         </constraints>
                                     </imageView>
@@ -203,6 +213,7 @@
                     <connections>
                         <outlet property="addIncidentNewBtn" destination="0aC-ZI-fkB" id="1vM-na-2Ec"/>
                         <outlet property="backgroundAddImage" destination="HRR-ia-azD" id="viR-2S-O5l"/>
+                        <outlet property="downloadCSVBtn" destination="xKK-je-tds" id="1Kf-Wo-h1R"/>
                         <outlet property="mainTableView" destination="xt8-vP-QiW" id="oeX-ua-688"/>
                         <outlet property="mainTitleLabel" destination="Fjz-9v-MJx" id="Y7W-Rm-M0c"/>
                         <outlet property="sortBtn" destination="ycF-uX-KuV" id="pBk-1a-51l"/>
@@ -459,9 +470,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="arrow.up.and.down" catalog="system" width="98" height="128"/>
+        <image name="arrow.down.app.fill" catalog="system" width="128" height="114"/>
         <image name="back" width="512" height="512"/>
         <image name="plus" width="512" height="512"/>
+        <image name="sort-icon" width="100" height="100"/>
         <namedColor name="BottomNavigation">
             <color red="0.21600000560283661" green="0.24699999392032623" blue="0.31799998879432678" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

@@ -17,7 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
         let launchedBefore = UserDefaults.standard.bool(forKey: "launchedBefore")
-      
+        //for save to files controller so the fonts visible
+        self.window?.tintColor = .blue
         
         if launchedBefore {
             

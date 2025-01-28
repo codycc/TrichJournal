@@ -7,6 +7,10 @@
 
 import UIKit
 import CoreData
+import CSV
+
+
+
 
 class MainVC: UIViewController {
     
@@ -30,10 +34,15 @@ class MainVC: UIViewController {
     
     @IBOutlet weak var sortLbl: UILabel!
     
+    @IBOutlet weak var downloadCSVBtn: UIImageView!
+    
     
     var currentSortId = 1
     
     override func viewDidLoad() {
+        
+        
+        
         super.viewDidLoad()
         mainTableView.delegate = self
         mainTableView.dataSource = self
@@ -51,6 +60,9 @@ class MainVC: UIViewController {
         sortBtn.addGestureRecognizer(sortTap)
         mainTableView.register(UINib(nibName: "IncidentCell", bundle: nil), forCellReuseIdentifier: "IncidentCell")
         NotificationCenter.default.addObserver(self, selector: #selector(reloadTable), name: NSNotification.Name(rawValue: "reloadTable"), object: nil)
+        
+        let downloadTap = UITapGestureRecognizer(target: self, action: #selector(self.downloadTapped(_:)))
+        downloadCSVBtn.addGestureRecognizer(downloadTap)
         
         loadIncidents()
         sortDate()
@@ -108,6 +120,49 @@ class MainVC: UIViewController {
         
     }
     
+    func createCSV(){
+        let fileName =  "trichJournalLog1.csv"
+        var csvText = "Date,# Of Hairs, length(minutes), Digested?, Area, Situation\n"
+        
+        for incident in incidents {
+            let date = NSDate(timeIntervalSince1970: incident.dateTime)
+            let formatter = DateFormatter()
+            formatter.dateFormat = "MM-dd-yyyy"
+            let finalDate = formatter.string(from: date as Date)
+            let stringDate = String(describing: finalDate)
+            
+            let newLine = "\(stringDate),\(incident.numberOfHairsPulled),\(incident.howLong),\(incident.didYouDigest),\(incident.areaAffected!), \(incident.situation!)\n"
+            csvText.append(newLine)
+        }
+
+
+            if let dir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
+
+                let fileURL = dir.appendingPathComponent(fileName)
+
+                do {
+                    try csvText.write(to: fileURL, atomically: false, encoding: .utf8)
+                    let doc = UIDocument(fileURL: fileURL)
+                    UIApplication.shared.keyWindow?.tintColor = .systemBlue
+                    let activityViewController = UIActivityViewController(activityItems: [fileURL], applicationActivities: nil)
+                               self.present(activityViewController, animated: true, completion: nil)
+                    
+                       // just send back the first one, which ought to be the only one
+                       
+                } catch {
+
+                   // print("this is  the error \(error)")
+
+                }
+            }
+        
+    
+      
+            
+     
+
+    }
+    
     @objc func goToNewEntryVC() {
         performSegue(withIdentifier: "goToAddEntryVC", sender: nil)
     }
@@ -119,6 +174,10 @@ class MainVC: UIViewController {
         sortEntries()
         mainTableView.reloadData()
         currentSortId += 1
+    }
+    
+    @objc func downloadTapped(_ sender: UITapGestureRecognizer? = nil) {
+        createCSV()
     }
     
     
