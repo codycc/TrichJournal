@@ -196,6 +196,22 @@ extension MainVC: UITableViewDataSource, UITableViewDelegate {
         return cell
     }
     
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+                context.delete(incidents[indexPath.row])
+              incidents.remove(at: indexPath.row)
+            do {
+               
+                try context.save()
+                
+            }catch {
+               print("error deleting cell")
+            }
+            
+              tableView.deleteRows(at: [indexPath], with: .fade)
+        }
+    }
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 173.00
     }

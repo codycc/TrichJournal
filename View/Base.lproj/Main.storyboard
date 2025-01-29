@@ -505,6 +505,15 @@
                                     <constraint firstAttribute="bottom" secondItem="qtn-k2-exA" secondAttribute="bottom" constant="10" id="fgm-XD-BVF"/>
                                 </constraints>
                             </view>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="hMW-ao-agV">
+                                <rect key="frame" x="5" y="45" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="7qV-7s-gHF"/>
+                                    <constraint firstAttribute="width" constant="50" id="OT1-VF-rPe"/>
+                                    <constraint firstAttribute="height" constant="50" id="hdV-fL-ldC"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="lU4-l9-i67"/>
+                                </constraints>
+                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1QT-te-pK3">
                                 <rect key="frame" x="0.0" y="100" width="393" height="60"/>
                                 <subviews>
@@ -546,15 +555,18 @@
                             <constraint firstItem="gJM-H2-dt8" firstAttribute="bottom" secondItem="PpB-kV-8Jx" secondAttribute="bottom" constant="10" id="6uN-km-qN8"/>
                             <constraint firstItem="PpB-kV-8Jx" firstAttribute="top" secondItem="1QT-te-pK3" secondAttribute="bottom" constant="10" id="8A5-wV-CX4"/>
                             <constraint firstItem="gJM-H2-dt8" firstAttribute="trailing" secondItem="PpB-kV-8Jx" secondAttribute="trailing" constant="10" id="Cub-gw-BEb"/>
+                            <constraint firstItem="hMW-ao-agV" firstAttribute="leading" secondItem="gJM-H2-dt8" secondAttribute="leading" constant="5" id="ePa-qW-iwR"/>
                             <constraint firstItem="tFf-ez-Kud" firstAttribute="trailing" secondItem="gJM-H2-dt8" secondAttribute="trailing" id="fYB-2e-sxW"/>
                             <constraint firstAttribute="trailing" secondItem="1QT-te-pK3" secondAttribute="trailing" id="ggD-i4-fLl"/>
                             <constraint firstItem="tFf-ez-Kud" firstAttribute="top" secondItem="rbP-Be-s4F" secondAttribute="top" id="oUj-x5-NkR"/>
                             <constraint firstItem="tFf-ez-Kud" firstAttribute="leading" secondItem="gJM-H2-dt8" secondAttribute="leading" id="oec-E6-7ON"/>
                             <constraint firstItem="1QT-te-pK3" firstAttribute="top" secondItem="tFf-ez-Kud" secondAttribute="bottom" id="vQe-Bu-h7L"/>
                             <constraint firstItem="1QT-te-pK3" firstAttribute="leading" secondItem="rbP-Be-s4F" secondAttribute="leading" id="vWP-Q4-3FE"/>
+                            <constraint firstItem="1QT-te-pK3" firstAttribute="top" secondItem="hMW-ao-agV" secondAttribute="bottom" constant="5" id="zPT-SI-W2p"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="backBtn" destination="hMW-ao-agV" id="Kbb-gM-2cz"/>
                         <outlet property="cycleBtn" destination="YU0-Oe-nPG" id="Kcf-pE-b0x"/>
                         <outlet property="dataLbl" destination="6V1-hv-Qai" id="SRr-OM-OTD"/>
                         <outlet property="pieChartView" destination="PpB-kV-8Jx" id="aC7-ih-cI6"/>

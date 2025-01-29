@@ -117,7 +117,7 @@
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mLI-eO-I4g">
-                                <rect key="frame" x="255" y="187" width="80" height="50"/>
+                                <rect key="frame" x="260" y="187" width="80" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" name="NavigationBar"/>
                                 <constraints>
@@ -142,7 +142,7 @@
                         <constraints>
                             <constraint firstItem="yAe-hv-e8l" firstAttribute="leading" secondItem="oDc-xC-tlB" secondAttribute="leading" constant="5" id="5B8-Nr-HIV"/>
                             <constraint firstAttribute="trailing" secondItem="yAe-hv-e8l" secondAttribute="trailing" constant="5" id="NC1-3B-o7l"/>
-                            <constraint firstAttribute="trailing" secondItem="mLI-eO-I4g" secondAttribute="trailing" constant="5" id="P8L-9s-JaJ"/>
+                            <constraint firstAttribute="trailing" secondItem="mLI-eO-I4g" secondAttribute="trailing" id="P8L-9s-JaJ"/>
                             <constraint firstAttribute="trailing" secondItem="jaO-vf-lxE" secondAttribute="trailing" constant="5" id="Vz4-h8-xbk"/>
                             <constraint firstItem="jaO-vf-lxE" firstAttribute="top" secondItem="oDc-xC-tlB" secondAttribute="top" constant="30" id="bEw-QD-K9l"/>
                             <constraint firstItem="ZUf-Gj-bTX" firstAttribute="leading" secondItem="oDc-xC-tlB" secondAttribute="leading" constant="5" id="gaJ-Rw-D3V"/>
