@@ -60,7 +60,7 @@ class NewEntryVC: UIViewController {
         tap.cancelsTouchesInView = false
         view.addGestureRecognizer(tap)
         
-        addEntryLabel.font = UIFont(name:"Roboto-SemiBold",size:30)
+        addEntryLabel.font = UIFont(name:"Roboto-ExtraLight",size:30)
         // Do any additional setup after loading the view.
         
         createSituationPicker()

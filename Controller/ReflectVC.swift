@@ -34,7 +34,7 @@ class ReflectVC: UIViewController {
         let cycleTap = UITapGestureRecognizer(target: self, action: #selector(self.cycleTapped(_:)))
         cycleBtn.addGestureRecognizer(cycleTap)
 
-        reflectLbl.font = UIFont(name:"Roboto-SemiBold",size:30)
+        reflectLbl.font = UIFont(name:"Roboto-ExtraLight",size:30)
         
         let backTap = UITapGestureRecognizer(target: self, action: #selector(self.backTapped(_:)))
         backBtn.addGestureRecognizer(backTap)

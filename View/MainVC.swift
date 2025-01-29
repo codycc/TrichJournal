@@ -113,7 +113,13 @@ class MainVC: UIViewController {
     }
     
     func createCSV(){
-        let fileName =  "trichJournalLog1.csv"
+        let date = Date()
+        let formatter = DateFormatter()
+        formatter.dateFormat = "dd.MM.yyyy"
+        let result = formatter.string(from: date)
+        
+        print("\(result)")
+        let fileName =  "trichJournalLog\(result).csv"
         var csvText = "Date,# Of Hairs, length(minutes), Digested?, Area, Situation\n"
         
         for incident in incidents {

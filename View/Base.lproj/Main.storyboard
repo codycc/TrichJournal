@@ -99,7 +99,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="100"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TrichJournal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fjz-9v-MJx">
-                                        <rect key="frame" x="149.66666666666666" y="69" width="94" height="21"/>
+                                        <rect key="frame" x="279" y="69" width="94" height="21"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -108,9 +108,9 @@
                                 </subviews>
                                 <color key="backgroundColor" name="NavigationBar"/>
                                 <constraints>
-                                    <constraint firstItem="Fjz-9v-MJx" firstAttribute="centerX" secondItem="6Ia-1n-Jtl" secondAttribute="centerX" id="0lM-fj-Uzi"/>
                                     <constraint firstAttribute="height" constant="100" id="4Kj-31-amz"/>
                                     <constraint firstAttribute="bottom" secondItem="Fjz-9v-MJx" secondAttribute="bottom" constant="10" id="JhM-HA-Myj"/>
+                                    <constraint firstAttribute="trailing" secondItem="Fjz-9v-MJx" secondAttribute="trailing" constant="20" id="k5r-2r-PF1"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TFs-nJ-dJ4">
@@ -254,7 +254,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="WNW-mS-Kpt">
+                                    <imageView clipsSubviews="YES" alpha="0.55000000000000004" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="WNW-mS-Kpt">
                                         <rect key="frame" x="5" y="45" width="50" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="bfr-Zh-sBO"/>
@@ -505,7 +505,7 @@
                                     <constraint firstAttribute="bottom" secondItem="qtn-k2-exA" secondAttribute="bottom" constant="10" id="fgm-XD-BVF"/>
                                 </constraints>
                             </view>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="hMW-ao-agV">
+                            <imageView clipsSubviews="YES" alpha="0.55000000000000004" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="hMW-ao-agV">
                                 <rect key="frame" x="5" y="45" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="7qV-7s-gHF"/>
