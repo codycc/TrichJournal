@@ -36,13 +36,11 @@ class MainVC: UIViewController {
     
     @IBOutlet weak var downloadCSVBtn: UIImageView!
     
+    @IBOutlet weak var reflectBtn: UIImageView!
     
     var currentSortId = 1
     
     override func viewDidLoad() {
-        
-        
-        
         super.viewDidLoad()
         mainTableView.delegate = self
         mainTableView.dataSource = self
@@ -64,21 +62,13 @@ class MainVC: UIViewController {
         let downloadTap = UITapGestureRecognizer(target: self, action: #selector(self.downloadTapped(_:)))
         downloadCSVBtn.addGestureRecognizer(downloadTap)
         
+        let reflectTap = UITapGestureRecognizer(target: self, action: #selector(self.reflectTapped(_:)))
+        reflectBtn.addGestureRecognizer(reflectTap)
+        
         loadIncidents()
         sortDate()
     }
-    
-    
-    
-    
-    @objc func reloadTable() {
-        loadIncidents()
-       /// currentSortId -= 1
-        //sortEntries()
-       // currentSortId += 1
-        mainTableView.reloadData()
-    }
-    
+
     func loadIncidents() {
         let request : NSFetchRequest<Incident> = Incident.fetchRequest()
         
@@ -88,6 +78,8 @@ class MainVC: UIViewController {
             print("Error loading incidents\(error)")
         }
     }
+    
+//MARK: Sorting Functions
     
     func sortDate() {
         incidents = incidents.sorted(by: { $0.dateTime < $1.dateTime })
@@ -155,12 +147,16 @@ class MainVC: UIViewController {
 
                 }
             }
-        
+    }
     
-      
-            
-     
-
+//MARK: OBJC
+    
+    @objc func reloadTable() {
+        loadIncidents()
+       /// currentSortId -= 1
+        //sortEntries()
+       // currentSortId += 1
+        mainTableView.reloadData()
     }
     
     @objc func goToNewEntryVC() {
@@ -176,17 +172,16 @@ class MainVC: UIViewController {
         currentSortId += 1
     }
     
+    @objc func reflectTapped(_ sender: UITapGestureRecognizer? = nil) {
+        performSegue(withIdentifier: "goToReflectVC", sender: nil)
+    }
+    
     @objc func downloadTapped(_ sender: UITapGestureRecognizer? = nil) {
         createCSV()
     }
-    
-    
-
-   
-
 }
 
-
+//MARK: Tableview delegate and datasource
 
 extension MainVC: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -205,10 +200,6 @@ extension MainVC: UITableViewDataSource, UITableViewDelegate {
         return 173.00
     }
     
-    
-    
-    
-    
-    
+ 
     
 }

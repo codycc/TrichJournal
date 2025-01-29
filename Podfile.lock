@@ -1,16 +1,22 @@
 PODS:
   - CSV.swift (2.4.3)
+  - DGCharts (5.1.0):
+    - DGCharts/Core (= 5.1.0)
+  - DGCharts/Core (5.1.0)
 
 DEPENDENCIES:
   - CSV.swift (~> 2.4.3)
+  - DGCharts
 
 SPEC REPOS:
   trunk:
     - CSV.swift
+    - DGCharts
 
 SPEC CHECKSUMS:
   CSV.swift: d38741b349c067b4a6db42237cb0e2974d21ccac
+  DGCharts: 1c6daf585b6cfc78807af44ea690d357c410627f
 
-PODFILE CHECKSUM: 3f0ce9046a0bfa78b47accce0335b900ff4c5c10
+PODFILE CHECKSUM: 929214f65aa4b662d5c2e0c8312f82642e48e8af
 
 COCOAPODS: 1.16.2

@@ -1,2 +1,3 @@
 ${PODS_ROOT}/Target Support Files/Pods-TrichJournal-TrichJournalUITests/Pods-TrichJournal-TrichJournalUITests-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/CSV.swift/CSV.framework
+${BUILT_PRODUCTS_DIR}/DGCharts/DGCharts.framework

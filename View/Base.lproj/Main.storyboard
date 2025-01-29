@@ -140,6 +140,14 @@
                                             <constraint firstAttribute="height" constant="60" id="xeZ-HJ-rW8"/>
                                         </constraints>
                                     </imageView>
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chart.pie.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Kzs-ir-mgV">
+                                        <rect key="frame" x="35" y="10.666666666666668" width="60" height="58.666666666666657"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="uLe-5f-7ow"/>
+                                            <constraint firstAttribute="height" constant="60" id="va5-xT-Fzp"/>
+                                        </constraints>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" name="BottomNavigation"/>
                                 <constraints>
@@ -149,6 +157,8 @@
                                     <constraint firstAttribute="height" constant="80" id="QWf-AI-dHv"/>
                                     <constraint firstAttribute="trailing" secondItem="xKK-je-tds" secondAttribute="trailing" constant="10" id="RXl-hs-12u"/>
                                     <constraint firstItem="HRR-ia-azD" firstAttribute="centerX" secondItem="TFs-nJ-dJ4" secondAttribute="centerX" id="uMW-9h-42k"/>
+                                    <constraint firstAttribute="bottom" secondItem="Kzs-ir-mgV" secondAttribute="bottom" constant="10" id="ugH-C5-nSV"/>
+                                    <constraint firstItem="Kzs-ir-mgV" firstAttribute="leading" secondItem="TFs-nJ-dJ4" secondAttribute="leading" constant="35" id="wPD-Pv-37j"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ava-xc-RLh">
@@ -216,9 +226,11 @@
                         <outlet property="downloadCSVBtn" destination="xKK-je-tds" id="1Kf-Wo-h1R"/>
                         <outlet property="mainTableView" destination="xt8-vP-QiW" id="oeX-ua-688"/>
                         <outlet property="mainTitleLabel" destination="Fjz-9v-MJx" id="Y7W-Rm-M0c"/>
+                        <outlet property="reflectBtn" destination="Kzs-ir-mgV" id="zje-h5-Cc5"/>
                         <outlet property="sortBtn" destination="ycF-uX-KuV" id="pBk-1a-51l"/>
                         <outlet property="sortLbl" destination="hNS-qm-get" id="997-AP-eRP"/>
                         <segue destination="fkB-RM-qHj" kind="presentation" identifier="goToAddEntryVC" modalPresentationStyle="fullScreen" id="RAs-su-RIv"/>
+                        <segue destination="L05-kG-tx5" kind="presentation" identifier="goToReflectVC" modalPresentationStyle="fullScreen" id="tQd-lB-dtA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LFf-Jk-xlW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -468,10 +480,96 @@
             </objects>
             <point key="canvasLocation" x="1565.6488549618321" y="14.788732394366198"/>
         </scene>
+        <!--ReflectVC-->
+        <scene sceneID="dox-qW-bIA">
+            <objects>
+                <viewController id="L05-kG-tx5" customClass="ReflectVC" customModule="TrichJournal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rbP-Be-s4F">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tFf-ez-Kud">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="100"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reflect" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qtn-k2-exA">
+                                        <rect key="frame" x="319.33333333333331" y="69.666666666666671" width="53.666666666666686" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="NavigationBar"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="qtn-k2-exA" secondAttribute="trailing" constant="20" id="53M-a4-AA9"/>
+                                    <constraint firstAttribute="height" constant="100" id="K4o-RC-lxB"/>
+                                    <constraint firstAttribute="bottom" secondItem="qtn-k2-exA" secondAttribute="bottom" constant="10" id="fgm-XD-BVF"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1QT-te-pK3">
+                                <rect key="frame" x="0.0" y="100" width="393" height="60"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sort-icon" translatesAutoresizingMaskIntoConstraints="NO" id="YU0-Oe-nPG">
+                                        <rect key="frame" x="338" y="5" width="40" height="50"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="HUB-VH-sJz"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Situtations" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6V1-hv-Qai">
+                                        <rect key="frame" x="15" y="5" width="308" height="50"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="26"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="BottomNavigation"/>
+                                <constraints>
+                                    <constraint firstItem="6V1-hv-Qai" firstAttribute="leading" secondItem="1QT-te-pK3" secondAttribute="leading" constant="15" id="9Td-FV-2w1"/>
+                                    <constraint firstAttribute="bottom" secondItem="YU0-Oe-nPG" secondAttribute="bottom" constant="5" id="I1N-5t-gog"/>
+                                    <constraint firstAttribute="height" constant="60" id="Rsz-cm-JKx"/>
+                                    <constraint firstItem="6V1-hv-Qai" firstAttribute="top" secondItem="1QT-te-pK3" secondAttribute="top" constant="5" id="e56-mz-D7M"/>
+                                    <constraint firstAttribute="trailing" secondItem="YU0-Oe-nPG" secondAttribute="trailing" constant="15" id="ebO-Bm-xCt"/>
+                                    <constraint firstAttribute="bottom" secondItem="6V1-hv-Qai" secondAttribute="bottom" constant="5" id="f6x-1B-oiM"/>
+                                    <constraint firstItem="YU0-Oe-nPG" firstAttribute="top" secondItem="1QT-te-pK3" secondAttribute="top" constant="5" id="sQM-q0-wEO"/>
+                                    <constraint firstItem="YU0-Oe-nPG" firstAttribute="leading" secondItem="6V1-hv-Qai" secondAttribute="trailing" constant="15" id="vr2-LV-i8U"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PpB-kV-8Jx" customClass="PieChartView" customModule="DGCharts">
+                                <rect key="frame" x="10" y="170" width="373" height="672"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gJM-H2-dt8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PpB-kV-8Jx" firstAttribute="leading" secondItem="gJM-H2-dt8" secondAttribute="leading" constant="10" id="48Q-ag-CQh"/>
+                            <constraint firstItem="gJM-H2-dt8" firstAttribute="bottom" secondItem="PpB-kV-8Jx" secondAttribute="bottom" constant="10" id="6uN-km-qN8"/>
+                            <constraint firstItem="PpB-kV-8Jx" firstAttribute="top" secondItem="1QT-te-pK3" secondAttribute="bottom" constant="10" id="8A5-wV-CX4"/>
+                            <constraint firstItem="gJM-H2-dt8" firstAttribute="trailing" secondItem="PpB-kV-8Jx" secondAttribute="trailing" constant="10" id="Cub-gw-BEb"/>
+                            <constraint firstItem="tFf-ez-Kud" firstAttribute="trailing" secondItem="gJM-H2-dt8" secondAttribute="trailing" id="fYB-2e-sxW"/>
+                            <constraint firstAttribute="trailing" secondItem="1QT-te-pK3" secondAttribute="trailing" id="ggD-i4-fLl"/>
+                            <constraint firstItem="tFf-ez-Kud" firstAttribute="top" secondItem="rbP-Be-s4F" secondAttribute="top" id="oUj-x5-NkR"/>
+                            <constraint firstItem="tFf-ez-Kud" firstAttribute="leading" secondItem="gJM-H2-dt8" secondAttribute="leading" id="oec-E6-7ON"/>
+                            <constraint firstItem="1QT-te-pK3" firstAttribute="top" secondItem="tFf-ez-Kud" secondAttribute="bottom" id="vQe-Bu-h7L"/>
+                            <constraint firstItem="1QT-te-pK3" firstAttribute="leading" secondItem="rbP-Be-s4F" secondAttribute="leading" id="vWP-Q4-3FE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cycleBtn" destination="YU0-Oe-nPG" id="Kcf-pE-b0x"/>
+                        <outlet property="dataLbl" destination="6V1-hv-Qai" id="SRr-OM-OTD"/>
+                        <outlet property="pieChartView" destination="PpB-kV-8Jx" id="aC7-ih-cI6"/>
+                        <outlet property="reflectLbl" destination="qtn-k2-exA" id="Y4O-GI-Ogn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pyF-jc-SzC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1062" y="822"/>
+        </scene>
     </scenes>
     <resources>
         <image name="arrow.down.app.fill" catalog="system" width="128" height="114"/>
         <image name="back" width="512" height="512"/>
+        <image name="chart.pie.fill" catalog="system" width="128" height="123"/>
         <image name="plus" width="512" height="512"/>
         <image name="sort-icon" width="100" height="100"/>
         <namedColor name="BottomNavigation">
