@@ -28,21 +28,14 @@ class WelcomeVC: UIViewController {
         } else {
           
         }
-        
-      
-        
     }
            
-    
        private func initialSetup() {
            
           // basic setup
           view.backgroundColor = .white
            welcomeLabel.font = UIFont(name:"Roboto-ExtraLight",size:50)
-           
            additionalTextLbl.font = UIFont(name:"Roboto-ExtraLight",size:30)
-           
-           
            welcomeBtn.layer.cornerRadius = 15
            welcomeBtn.titleLabel?.font =  UIFont(name: "Roboto-SemiBold", size: 28)
           
@@ -55,7 +48,6 @@ class WelcomeVC: UIViewController {
           // Set the start and end points for the gradient layer
           gradientLayer.startPoint = CGPoint(x: 0.0, y: 0.0)
           gradientLayer.endPoint = CGPoint(x: 1.0, y: 1.0)
-
           // Set the frame to the layer
           gradientLayer.frame = view.frame
 
@@ -64,7 +56,6 @@ class WelcomeVC: UIViewController {
        }
     
     func showLabels() {
-   
         UIView.animate(withDuration: 2.0) {
                self.welcomeLabel.alpha = 1.0
             
@@ -76,17 +67,10 @@ class WelcomeVC: UIViewController {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
                     UIView.animate(withDuration: 2.0) {
                            self.welcomeBtn.alpha = 1.0
-                        
                        }
                 }
                }
         }
-        
-      
-        
-        
-        
-       
     }
     
  

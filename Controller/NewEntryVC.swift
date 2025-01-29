@@ -8,7 +8,7 @@
 import UIKit
 import CoreData
 
-class NewEntryVC: UIViewController {
+class NewEntryVC: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var intensityControl: UISlider!
     
@@ -155,6 +155,8 @@ class NewEntryVC: UIViewController {
         }
     }
     
+//MARK: OBJC
+    
     @objc func backTapped(_ sender: UITapGestureRecognizer? = nil) {
         self.dismiss(animated: true, completion: nil)
     }
@@ -169,6 +171,8 @@ class NewEntryVC: UIViewController {
         dateTimeTextField.text = dateFormatter.string(from: datePicker.date)
         timeSince1970 = self.datePicker!.date.timeIntervalSince1970
     }
+    
+//MARK: IBACTION
     
     
     @IBAction func addNewSituationPressed(_ sender: UIButton) {
@@ -201,16 +205,28 @@ class NewEntryVC: UIViewController {
     @IBAction func submitIncidentPressed(_ sender: UIButton) {
         createIncident()
     }
-    
-    
-
 }
 
-extension NewEntryVC: UITextFieldDelegate {
-    
-}
+//MARK: Pickerview delegate and datasource
 
-extension NewEntryVC: UIPickerViewDelegate {
+
+extension NewEntryVC: UIPickerViewDataSource, UIPickerViewDelegate {
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+     
+        if pickerView == situationPicker {
+            return situations.count
+        } else if pickerView == affectedAreaPicker {
+            return affectedAreas.count
+        } else {
+            return 0
+        }
+        
+       
+    }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         
@@ -235,28 +251,6 @@ extension NewEntryVC: UIPickerViewDelegate {
         } else {
             selectedSituation = ""
         }
-       
-    }
-    
-   
-    
-}
-
-extension NewEntryVC: UIPickerViewDataSource {
-    func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return 1
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-     
-        if pickerView == situationPicker {
-            return situations.count
-        } else if pickerView == affectedAreaPicker {
-            return affectedAreas.count
-        } else {
-            return 0
-        }
-        
        
     }
     

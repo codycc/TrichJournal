@@ -44,14 +44,11 @@ class MainVC: UIViewController {
         super.viewDidLoad()
         mainTableView.delegate = self
         mainTableView.dataSource = self
-        
         mainTitleLabel.font = UIFont(name:"Roboto-ExtraLight",size:30)
         backgroundAddImage.layer.cornerRadius = backgroundAddImage.frame.size.width/2
         backgroundAddImage.clipsToBounds = true
-
         backgroundAddImage.layer.borderColor = UIColor.white.cgColor
         backgroundAddImage.layer.borderWidth = 5.0
-
         let goToAddIncidentTapped = UITapGestureRecognizer(target: self, action: #selector(goToNewEntryVC))
         addIncidentNewBtn.addGestureRecognizer(goToAddIncidentTapped)
         let sortTap = UITapGestureRecognizer(target: self, action: #selector(self.sortTapped(_:)))
